@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 import Header from './components/header';
 import Footer from './components/footer';
+import SocialMediaLink from './components/socialMediaLink';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,6 +14,8 @@ function App() {
       <div className="content">
         <Header />
         <div className="width_screen">
+          <SocialMediaLink/>
+          
           <a href="https://vitejs.dev" target="_blank">
             <img src={viteLogo} className="logo" alt="Vite logo" />
           </a>
@@ -34,3 +37,5 @@ function App() {
   );
 }
 export default App;
+
+//<FontAwesomeIcon icon="fa-brands fa-twitter" />
