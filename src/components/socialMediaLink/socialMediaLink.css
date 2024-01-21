@@ -10,9 +10,6 @@
 .transition {
   transition: 1s;
 }
-.social-media-link_container a{
-  color:#000;
-}
 
 .social-media-link_container a:hover{
   color:#606060;

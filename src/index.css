@@ -12,10 +12,15 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 100px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 a {
   text-decoration: none;
+  color:#000;
 }
 #root {
   display: flex;

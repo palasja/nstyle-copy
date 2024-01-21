@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot, faPhoneFlip } from '@fortawesome/free-solid-svg-icons'
 import './feedbackInfo.css';
 import SocialMediaLink from '../socialMediaLink';
 
@@ -8,13 +8,17 @@ const FeedbackInfo = () => {
     <div className='feedback_info'>
       <SocialMediaLink/>
       <div className='adress'>
-        <FontAwesomeIcon icon={faLocationDot} />
-        <p>г. Минск, ул. Ложинская, 22</p>
-        <p>ТЦ "Дмитриев Кирмаш" (2 этаж)</p>
+        <div className='adress-mark'>
+          <a href='https://www.google.com/maps/@51.7909876,29.4893485,14.92z?entry=ttu' aria-label='Whatsapp' rel='noopener noreferrer' target='_blank' className='transition'><FontAwesomeIcon icon={faLocationDot} /></a>
+        </div>
+        <div className='adress-adress'>
+          <a href='https://www.google.com/maps/@51.7909876,29.4893485,14.92z?entry=ttu' aria-label='Whatsapp' rel='noopener noreferrer' target='_blank' className='transition'>г. Минск, ул. Ложинская, 22</a>
+        </div>
+        <div className='adress-palce'>ТЦ "Дмитриев Кирмаш" (2 этаж)</div>
       </div>
       <div className='phone'>
-        <FontAwesomeIcon icon={faPhone} />
-        <p>+ 375(29) 178-68-58</p>
+        <div className='phone_icon'><a href='tel:+375291786858' aria-label='Phone' rel='noopener noreferrer' target='_blank' ><FontAwesomeIcon icon={faPhoneFlip} /></a></div>
+        <div className='phone_number'><a href='tel:+375291786858' aria-label='Phone' rel='noopener noreferrer' target='_blank' >+ 375(29) 178-68-58</a></div>
       </div>
     </div>
     

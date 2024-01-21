@@ -2,5 +2,54 @@
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
-  
+}
+
+.adress{
+  display: grid;
+  grid-template-areas: 
+            "mark adress"
+            "mark place";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 35px 1fr;
+}
+.adress-mark{
+  grid-area: mark;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-size: 36px;
+  margin-right: 15px;
+}
+.adress-adress{
+  grid-area: adress;
+  display: flex;
+  color: #4A4A4A;
+  align-items: center;
+  font-size: 18px;
+  line-height: 26px;
+}
+.adress-adress a {
+  color: inherit;
+}
+.adress-palce{
+  grid-area: place;
+  display: flex;
+}
+
+.phone{
+  display: grid;
+  grid-template-columns: 35px 1fr;
+}
+.phone_icon{
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+.phone_number{
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
