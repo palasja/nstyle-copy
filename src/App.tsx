@@ -9,12 +9,14 @@ import Services from './pages/services';
 import Team from './pages/team';
 import Home from './pages/home';
 import Error from './pages/error';
+import Navigation from './components/navigation';
 
 function App() {
   return (
     <>
       <div className="content">
         <Header />
+        <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Blog" element={<Blog />} />
@@ -24,7 +26,6 @@ function App() {
           <Route path="/Team" element={<Team />} />
           <Route path="*" element={<Error />} />
         </Routes>
-
       </div>
       <Footer />
     </>

@@ -1,2 +1,2 @@
-import Discount from "./discount";
+import Discount from './discount';
 export default Discount;

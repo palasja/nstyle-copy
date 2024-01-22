@@ -1,11 +1,11 @@
 import './team.css';
 
 const Team = () => {
-  return(
+  return (
     <>
       <h2>Команда</h2>
     </>
   );
-}
+};
 
 export default Team;

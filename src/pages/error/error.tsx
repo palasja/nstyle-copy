@@ -6,6 +6,6 @@ const Error = () => {
       <h2>Божухна, нешта зламаў</h2>
     </>
   );
-}
+};
 
 export default Error;

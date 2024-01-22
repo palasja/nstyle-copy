@@ -1,11 +1,11 @@
 import './services.css';
 
-const Services= () => {
-  return(
+const Services = () => {
+  return (
     <>
-    <h2>Услуги</h2>
+      <h2>Услуги</h2>
     </>
   );
-}
+};
 
 export default Services;
