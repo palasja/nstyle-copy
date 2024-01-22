@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './App.css';
 import Header from './components/header';
 import Footer from './components/footer';
@@ -8,6 +7,8 @@ import Contacts from './pages/contacts';
 import Discount from './pages/discount';
 import Services from './pages/services';
 import Team from './pages/team';
+import Home from './pages/home';
+import Error from './pages/error';
 
 function App() {
   return (
@@ -15,13 +16,13 @@ function App() {
       <div className="content">
         <Header />
         <Routes>
-          <Route path="/" element={<Blog />} />
+          <Route path="/" element={<Home />} />
           <Route path="/Blog" element={<Blog />} />
           <Route path="/Contacts" element={<Contacts />} />
           <Route path="/Discount" element={<Discount />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/Team" element={<Team />} />
-          <Route path="*" element={<Team />} />
+          <Route path="*" element={<Error />} />
         </Routes>
 
       </div>
