@@ -1,18 +1,39 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
 import Header from './components/header';
 import Footer from './components/footer';
+import { Route, Routes } from 'react-router-dom';
+import Blog from './pages/blog';
+import Contacts from './pages/contacts';
+import Discount from './pages/discount';
+import Services from './pages/services';
+import Team from './pages/team';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div className="content">
         <Header />
-        <div className="width_screen">
+        <Routes>
+          <Route path="/" element={<Blog />} />
+          <Route path="/Blog" element={<Blog />} />
+          <Route path="/Contacts" element={<Contacts />} />
+          <Route path="/Discount" element={<Discount />} />
+          <Route path="/Services" element={<Services />} />
+          <Route path="/Team" element={<Team />} />
+          <Route path="*" element={<Team />} />
+        </Routes>
+
+      </div>
+      <Footer />
+    </>
+  );
+}
+export default App;
+
+//<FontAwesomeIcon icon="fa-brands fa-twitter" />
+/**
+         <div className="width_screen">
           <a href="https://vitejs.dev" target="_blank">
             <img src={viteLogo} className="logo" alt="Vite logo" />
           </a>
@@ -28,11 +49,4 @@ function App() {
           </p>
         </div>
         <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-      </div>
-      <Footer />
-    </>
-  );
-}
-export default App;
-
-//<FontAwesomeIcon icon="fa-brands fa-twitter" />
+ */
