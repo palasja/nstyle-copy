@@ -7,9 +7,9 @@ import Contacts from './pages/contacts';
 import Discount from './pages/discount';
 import Services from './pages/services';
 import Team from './pages/team';
-import Home from './pages/home';
 import Error from './pages/error';
 import Navigation from './components/navigation';
+import Eyebrows from './pages/eyebrows';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Header />
         <Navigation />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Eyebrows />} />
           <Route path="/Blog" element={<Blog />} />
           <Route path="/Contacts" element={<Contacts />} />
           <Route path="/Discount" element={<Discount />} />

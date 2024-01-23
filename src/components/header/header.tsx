@@ -1,4 +1,3 @@
-import React from 'react';
 //import CurrentRoute from '../curentRoute';
 //import Navigation from '../navigation';
 import './header.css';
