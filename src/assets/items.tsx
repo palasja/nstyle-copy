@@ -119,13 +119,13 @@ const EyebrowsEyelashes: ServiceCostInfo = {
   service: [Eyebrows, Eyelashes],
 };
 
-let pathDictionary:{[key: string]: string;} = {
+const pathDictionary: { [key: string]: string } = {
   '': 'Главная',
-  'Blog': 'Блог',
-  'Contacts': 'Контакты',
-  'Discount': 'Акции',
-  'Services': 'Услуги',
-  'Team': 'Команда',
-  'Vacancies': 'Вакансии',
+  Blog: 'Блог',
+  Contacts: 'Контакты',
+  Discount: 'Акции',
+  Services: 'Услуги',
+  Team: 'Команда',
+  Vacancies: 'Вакансии',
 };
-export {EyebrowsEyelashes, pathDictionary} ;
+export { EyebrowsEyelashes, pathDictionary };

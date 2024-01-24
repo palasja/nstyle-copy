@@ -60,7 +60,6 @@ const Navigation = () => {
       </div>
       </div>
     </div>
-
   );
 };
 
