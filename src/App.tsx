@@ -10,6 +10,7 @@ import Team from './pages/team';
 import Error from './pages/error';
 import Navigation from './components/navigation';
 import Eyebrows from './pages/eyebrows';
+import Vacancies from './pages/vacancies/vacancies';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/Discount" element={<Discount />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/Team" element={<Team />} />
+          <Route path="/Vacancies" element={<Vacancies />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
