@@ -28,5 +28,4 @@ const Eyebrows = () => {
     </>
   );
 };
-
 export default Eyebrows;
