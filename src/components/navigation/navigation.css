@@ -57,7 +57,7 @@
   width: 50%;
 }
 
-.active::before {
+.navigation-panel_active::before {
   position: absolute;
   height: 2px;
   left: 0;

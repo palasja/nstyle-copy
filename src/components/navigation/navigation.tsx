@@ -10,7 +10,7 @@ const Navigation = () => {
       <li>
         <NavLink
           to="/Services"
-          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+          className={({ isActive }) => (isActive ? 'navigation-panel_active' : 'inactive')}
         >
           Услуги
         </NavLink>
@@ -18,7 +18,7 @@ const Navigation = () => {
       <li>
         <NavLink
           to="/Discount"
-          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+          className={({ isActive }) => (isActive ? 'navigation-panel_active' : 'inactive')}
         >
           Акции
         </NavLink>
@@ -31,19 +31,19 @@ const Navigation = () => {
   <nav>
     <ul>
       <li>
-        <NavLink to="/Blog" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
+        <NavLink to="/Blog" className={({ isActive }) => (isActive ? 'navigation-panel_active' : 'inactive')}>
           Блог
         </NavLink>
       </li>
       <li>
-        <NavLink to="/Team" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
+        <NavLink to="/Team" className={({ isActive }) => (isActive ? 'navigation-panel_active' : 'inactive')}>
           Команда
         </NavLink>
       </li>
       <li>
         <NavLink
           to="/Contacts"
-          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+          className={({ isActive }) => (isActive ? 'navigation-panel_active' : 'inactive')}
         >
           Контакты
         </NavLink>
