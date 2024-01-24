@@ -3,8 +3,9 @@ import './navigation.css';
 
 const Navigation = () => {
   return (
-    <div className="screen-wide">
-      <div className="navigation-panel">
+    <div className="screen-wide_stiky">
+      <div className="screen-wide">
+        <div className="navigation-panel">
         <nav>
           <ul className="navigation-panel_left">
             <li>
@@ -56,6 +57,7 @@ const Navigation = () => {
             </li>
           </ul>
         </nav>
+      </div>
       </div>
     </div>
   );
