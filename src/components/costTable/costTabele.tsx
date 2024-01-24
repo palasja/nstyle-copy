@@ -7,8 +7,8 @@ const CostTable = (props: ServiceCostTable) => {
     <section className="service-list">
       <h4 className="service-list_name">{name}</h4>
       <ul className="service-list_list">
-        {services.map((costRow) => (
-          <li className="service-list_list__row">
+        {services.map((costRow, i) => (
+          <li key={costRow.id} className="service-list_list__row">
             {costRow.name}
             <span>{costRow.cost} руб.</span>
           </li>

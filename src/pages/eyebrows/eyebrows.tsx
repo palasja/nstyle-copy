@@ -1,7 +1,7 @@
 import './eyebrows.css';
 import TopPanel from '../../components/topPanel';
 import CostTable from '../..//components/costTable/costTabele';
-import EyebrowsEyelashes from '../../assets/items';
+import { EyebrowsEyelashes } from '../../assets/items';
 
 const Eyebrows = () => {
   const eyebrowsEyelashes = EyebrowsEyelashes;

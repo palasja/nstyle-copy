@@ -119,4 +119,13 @@ const EyebrowsEyelashes: ServiceCostInfo = {
   service: [Eyebrows, Eyelashes],
 };
 
-export default EyebrowsEyelashes;
+let pathDictionary:{[key: string]: string;} = {
+  '': 'Главная',
+  'Blog': 'Блог',
+  'Contacts': 'Контакты',
+  'Discount': 'Акции',
+  'Services': 'Услуги',
+  'Team': 'Команда',
+  'Vacancies': 'Вакансии',
+};
+export {EyebrowsEyelashes, pathDictionary} ;
