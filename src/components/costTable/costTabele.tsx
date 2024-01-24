@@ -10,7 +10,7 @@ const CostTable = (props: ServiceCostTable) => {
         {services.map((costRow) => (
           <li className="service-list_list__row">
             {costRow.name}
-            <span>{costRow.cost} .руб</span>
+            <span>{costRow.cost} руб.</span>
           </li>
         ))}
       </ul>
