@@ -1,0 +1,16 @@
+.social-media-link_container {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+
+  list-style: none;
+}
+.transition {
+  transition: 1s;
+}
+
+.social-media-link_container a:hover {
+  color: #606060;
+}

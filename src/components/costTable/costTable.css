@@ -1,0 +1,36 @@
+.service-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-left: 195px;
+  margin-right: 220px;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.service-list_name {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0 0 18px 0;
+}
+
+.service-list_list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.service-list_list__row {
+  display: flex;
+  justify-content: space-between;
+  color: #7f7f7f;
+  list-style: none;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.service-list_arrow {
+  width: 100%;
+}

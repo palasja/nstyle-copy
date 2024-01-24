@@ -4,37 +4,29 @@ module.exports = {
     browser: true,
     es6: true,
     jest: true,
-    node: true
+    node: true,
   },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
     'prettier',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
   },
-  plugins: [
-    'react-refresh',
-    '@typescript-eslint',
-    'react',
-    'prettier',
-    'react-hooks'],
+  plugins: ['react-refresh', '@typescript-eslint', 'react', 'prettier', 'react-hooks'],
   rules: {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
+    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/ban-ts-comment': 'error',
@@ -48,20 +40,17 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
-        'endOfLine': 'auto'
-      }
+        endOfLine: 'auto',
+      },
     ],
-    'comma-dangle': [
-      'error',
-      'only-multiline'
-    ],
+    'comma-dangle': ['error', 'only-multiline'],
     'react/prop-types': 'off',
     'react/display-name': 'off',
   },
   settings: {
     react: {
       pragma: 'React',
-      version: 'detect'
-    }
-  }
-}
+      version: 'detect',
+    },
+  },
+};
