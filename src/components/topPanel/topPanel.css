@@ -29,21 +29,20 @@
 .top-panel_text h3 {
   margin: 0;
   font-family: 'Roboto Slab', sans-serif;
-  
 }
-.top-panel_link-row{
+.top-panel_link-row {
   font-size: 14px;
 }
-.top-panel_link{
+.top-panel_link {
   font-size: 14px;
   color: #fff;
   font-weight: 400;
   text-transform: uppercase;
 }
-.top-panel_link:nth-child(n+2)::after{
+.top-panel_link:nth-child(n + 2)::after {
   content: ' / ';
 }
-.top-panel_current-link{
+.top-panel_current-link {
   font-size: 14px;
   color: #fff;
   font-weight: 400;

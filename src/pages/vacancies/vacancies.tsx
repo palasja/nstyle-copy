@@ -1,9 +1,7 @@
-import './vacancies.css'
+import './vacancies.css';
 
 const Vacancies = () => {
-  return (
-    <></>
-  );
-}
+  return <></>;
+};
 
 export default Vacancies;
