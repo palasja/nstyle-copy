@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import './footer.css';
 import SocialMediaLink from '../socialMediaLink';
+import logo from '../../assets/logo.svg';
+import arrow from '../../assets/images/arrow-right.png';
 
 const Footer = () => {
   return (
@@ -8,7 +10,7 @@ const Footer = () => {
       <div className="footer_left">
         <img
           className="footer_arrow-left"
-          src={new URL(`../../assets/images/arrow-right.png`, import.meta.url).href}
+          src={arrow}
           alt="Arrow right"
         />
         <nav className="footer_nav">
@@ -32,7 +34,7 @@ const Footer = () => {
         <a href="/" className="footer_ligo-link">
           <img
             className="footer_logo-image"
-            src={new URL(`../../assets/logo.svg`, import.meta.url).href}
+            src={logo}
             alt="Rs School logo"
           />
         </a>
@@ -49,7 +51,7 @@ const Footer = () => {
       </div>
       <div className="footer_right">
         <img
-          src={new URL(`../../assets/images/arrow-right.png`, import.meta.url).href}
+          src={arrow}
           alt="Arrow right"
         />
         <nav className="footer_nav">

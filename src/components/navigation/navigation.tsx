@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import './navigation.css';
 import { useState } from 'react';
+import logo from '../../assets/logo.svg';
 
 const Navigation = () => {
   const [isShowMoreServices, setisShowMoreServices] = useState(false);
@@ -31,7 +32,7 @@ const Navigation = () => {
             </NavLink>
           </nav>
           <a href="/" className="logo">
-            <img src={new URL(`../../assets/logo.svg`, import.meta.url).href} alt="NStyle logo" />
+            <img src={logo} alt="NStyle logo" />
           </a>
           <nav className="navigation-panel_right">
             <NavLink

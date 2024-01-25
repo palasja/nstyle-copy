@@ -2,8 +2,7 @@ import './index.css'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import { BrowserRouter, RouterProvider } from 'react-router-dom'
-import Eyebrows from './pages/eyebrows'
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.hydrateRoot(
   document.getElementById('root') as HTMLElement,

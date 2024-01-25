@@ -1,5 +1,6 @@
 import { ServiceCostTable } from 'src/type/costType';
 import './costTable.css';
+import arrow from '../../assets/images/arrow-right.png';
 
 const CostTable = (props: ServiceCostTable) => {
   const { name, services } = props;
@@ -16,7 +17,7 @@ const CostTable = (props: ServiceCostTable) => {
       </ul>
       <div className="service-list_arrow">
         <img
-          src={new URL(`../../assets/images/arrow-right.png`, import.meta.url).href}
+          src={arrow}
           alt="Arrow right"
         />
       </div>
