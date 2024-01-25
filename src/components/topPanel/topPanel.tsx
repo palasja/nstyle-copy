@@ -8,7 +8,7 @@ const TopPanel = () => {
   const [currentRoute, setCurrentRoute] = useState('');
   useEffect(() => {
     setCurrentRoute(window.location.pathname);
-  }, [setCurrentRoute]);
+  }, [currentRoute, setCurrentRoute]);
 
   const getCurrentPathLink = (): JSX.Element[] => {
     let res: JSX.Element[] = [];
@@ -34,6 +34,13 @@ const TopPanel = () => {
     }
     return res;
   };
+
+  const getTopPanelText = (): string => {
+    const mainPath = currentRoute.split(new RegExp('\\?'))[0];
+    const path = mainPath.split(new RegExp('/')).pop() as string;
+    return pathDictionary[path];
+  };
+
   return (
     <section className="top-panel">
       <div className="top-panel_text">
@@ -47,7 +54,7 @@ const TopPanel = () => {
           )}
           {currentRoute.length > 1 ? getCurrentPathLink().map((el) => el) : ''}
         </div>
-        <h3>Брови | Ресницы | Макияж</h3>
+        <h3>{getTopPanelText()}</h3>
       </div>
       <img src={new URL(`../../assets/images/pattran.png`, import.meta.url).href} alt="pattran" />
     </section>

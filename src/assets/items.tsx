@@ -127,5 +127,9 @@ const pathDictionary: { [key: string]: string } = {
   Services: 'Услуги',
   Team: 'Команда',
   Vacancies: 'Вакансии',
+  Eyebrows: 'Брови | Ресницы | Макияж',
+  Haidress: 'Парикхмахерские',
+  Cosmetic: 'Косметические',
+  Manicure: 'Ногтевой сервис',
 };
 export { EyebrowsEyelashes, pathDictionary };
