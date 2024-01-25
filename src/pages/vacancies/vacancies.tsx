@@ -1,5 +1,5 @@
 import TopPanel from '../../components/topPanel';
-import './vacancies.css';
+import './vacancies.css'
 
 const Vacancies = () => {
   return (
