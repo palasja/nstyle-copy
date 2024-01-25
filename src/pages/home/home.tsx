@@ -1,7 +1,12 @@
+import TopPanel from '../../components/topPanel';
 import './home.css';
 
 const Home = () => {
-  return <>Home</>;
+  return (
+    <>
+      <TopPanel />
+    </>
+  );
 };
 
 export default Home;

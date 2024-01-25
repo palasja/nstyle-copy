@@ -1,2 +1,2 @@
-import Vacancies from "./vacancies";
+import Vacancies from './vacancies';
 export default Vacancies;

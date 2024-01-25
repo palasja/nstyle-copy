@@ -1,9 +1,10 @@
+import TopPanel from '../../components/topPanel';
 import './blog.css';
 
 const Blog = () => {
   return (
     <>
-      <h1>Blog</h1>
+      <TopPanel />
     </>
   );
 };

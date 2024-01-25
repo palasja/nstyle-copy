@@ -1,7 +1,7 @@
 import TopPanel from '../../components/topPanel';
-import './vacancies.css';
+import './manicure.css';
 
-const Vacancies = () => {
+const Manicure = () => {
   return (
     <>
       <TopPanel />
@@ -9,4 +9,4 @@ const Vacancies = () => {
   );
 };
 
-export default Vacancies;
+export default Manicure;

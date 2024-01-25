@@ -1,9 +1,10 @@
+import TopPanel from '../../components/topPanel';
 import './discount.css';
 
 const Discount = () => {
   return (
     <>
-      <h2>Акции</h2>
+      <TopPanel />
     </>
   );
 };

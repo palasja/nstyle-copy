@@ -1,9 +1,10 @@
+import TopPanel from '../../components/topPanel';
 import './services.css';
 
 const Services = () => {
   return (
     <>
-      <h2>Услуги</h2>
+      <TopPanel />
     </>
   );
 };

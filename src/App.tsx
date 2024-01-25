@@ -11,6 +11,10 @@ import Error from './pages/error';
 import Navigation from './components/navigation';
 import Eyebrows from './pages/eyebrows';
 import Vacancies from './pages/vacancies/vacancies';
+import Haidress from './pages/haidress';
+import Cosmetic from './pages/cosmetic';
+import Manicure from './pages/manicure';
+import Home from './pages/home';
 
 function App() {
   return (
@@ -19,11 +23,15 @@ function App() {
         <Header />
         <Navigation />
         <Routes>
-          <Route path="/" element={<Eyebrows />} />
+          <Route path="/" element={<Home />} />
           <Route path="/Blog" element={<Blog />} />
           <Route path="/Contacts" element={<Contacts />} />
           <Route path="/Discount" element={<Discount />} />
+          <Route path="/Services/Eyebrows" element={<Eyebrows />} />
           <Route path="/Services" element={<Services />} />
+          <Route path="/Services/Haidress" element={<Haidress />} />
+          <Route path="/Services/Cosmetic" element={<Cosmetic />} />
+          <Route path="/Services/Manicure" element={<Manicure />} />
           <Route path="/Team" element={<Team />} />
           <Route path="/Vacancies" element={<Vacancies />} />
           <Route path="*" element={<Error />} />
@@ -34,23 +42,3 @@ function App() {
   );
 }
 export default App;
-
-//<FontAwesomeIcon icon="fa-brands fa-twitter" />
-/**
-         <div className="width_screen">
-          <a href="https://vitejs.dev" target="_blank">
-            <img src={viteLogo} className="logo" alt="Vite logo" />
-          </a>
-          <a href="https://react.dev" target="_blank">
-            <img src={reactLogo} className="logo react" alt="React logo" />
-          </a>
-        </div>
-        <h1>Vite + React</h1>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test HMR
-          </p>
-        </div>
-        <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
- */
