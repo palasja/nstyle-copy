@@ -108,7 +108,8 @@ export const handler = serverless(app);
 
 
 
-import fs from 'node:fs';
+/** ----------------------- prod ok, dev use.app require midlware
+ import fs from 'node:fs';
 import express, { Router } from "express";
 import serverless from "serverless-http";
 import sirv from 'sirv';
@@ -170,10 +171,11 @@ app.use('*', async (req, res) => {
 });
 
 export const handler = serverless(app);
+ */
 
 
-/**
- * //----------------------------- work without image
+
+ //----------------------------- work without image, only prod
  import fs from 'node:fs';
 import express, { Router } from "express";
 import serverless from "serverless-http";
@@ -214,4 +216,3 @@ app.use('*', async (req, res) => {
 app.use("*", router);
 
 export const handler = serverless(app);
- */
