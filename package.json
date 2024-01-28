@@ -18,7 +18,8 @@
     "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server",
     "preview": "cross-env NODE_ENV=production node server",
     "dev": "cross-env NODE_ENV=development node server.js",
-    "netlify:dev": "netlify dev -d public -f functions"
+    "netlify:dev": "cross-env NODE_ENV=development netlify dev -d public -f functions",
+    "netlify:preview": "cross-env NODE_ENV=production netlify dev -d public -f functions"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
@@ -31,6 +32,7 @@
     "compression": "^1.7.4",
     "express": "^4.18.2",
     "netlify-cli": "^17.15.3",
+    "pkg": "^5.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.3",

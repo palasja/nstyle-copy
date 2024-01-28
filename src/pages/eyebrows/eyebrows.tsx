@@ -2,7 +2,7 @@ import './eyebrows.css';
 import TopPanel from '../../components/topPanel';
 import CostTable from '../..//components/costTable/costTabele';
 import { EyebrowsEyelashes } from '../../assets/items';
-
+import EyebrowsAdded from '../../assets/images/additionsl_eyebrows.jpg';
 const Eyebrows = () => {
   const eyebrowsEyelashes = EyebrowsEyelashes;
   return (
@@ -20,7 +20,7 @@ const Eyebrows = () => {
           />
         ))}
         <section className="additional">
-          <img src={new URL(`../../assets/images/additionsl_eyebrows.jpg`, import.meta.url).href} />
+          <img src={EyebrowsAdded} />
           <h4 className="additional_text">Наращивание ресниц в Минске</h4>
           <h4 className="additional_text">Уход за Бровями</h4>
         </section>

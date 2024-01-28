@@ -9,3 +9,5 @@
   from = "/*"
   status = 200
   to = "/.netlify/functions/api/:splat"
+  [dev]
+  framework = "vite"

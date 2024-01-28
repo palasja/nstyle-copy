@@ -3,7 +3,7 @@ import './topPanel.css';
 import { pathDictionary } from '../../assets/items';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationCrosshairs } from '@fortawesome/free-solid-svg-icons';
-
+import pattran from '../../assets/images/pattran.png';
 const TopPanel = () => {
   const [currentRoute, setCurrentRoute] = useState('');
   useEffect(() => {
@@ -56,7 +56,7 @@ const TopPanel = () => {
         </div>
         <h3>{getTopPanelText()}</h3>
       </div>
-      <img src={new URL(`../../assets/images/pattran.png`, import.meta.url).href} alt="pattran" />
+      <img src={pattran} alt="pattran" />
     </section>
   );
 };
