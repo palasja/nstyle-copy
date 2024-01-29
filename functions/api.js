@@ -1,6 +1,17 @@
+import express, { Router } from "express";
+import serverless from "serverless-http";
+
+const api = express();
+
+const router = Router();
+router.get("*", (req, res) => res.send("Hello World!"));
+
+api.use("*", router);
+
+export const handler = serverless(api);
 //---------------------------- work without css
 // import express, { Router } from "express";
-// import serverless from "serverless-http";
+// import serverless from "serverless-http"; 
 // import render from '../dist/server/entry-server.js'
 // import fs from 'node:fs';
 // const api = express();
@@ -176,12 +187,14 @@ export const handler = serverless(app);
 
 
  //----------------------------- work without image, only prod
- import fs from 'node:fs';
+/**
+  import fs from 'node:fs';
 import express, { Router } from "express";
 import serverless from "serverless-http";
 import sirv from 'sirv';
 import serverRender from '../dist/server/entry-server.js'
 import com from'compression' ;
+
 const router = Router();
 const base = process.env.BASE || '/';
 // Cached production assets
@@ -216,3 +229,4 @@ app.use('*', async (req, res) => {
 app.use("*", router);
 
 export const handler = serverless(app);
+ */
