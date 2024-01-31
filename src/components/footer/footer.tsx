@@ -29,13 +29,13 @@ const Footer = () => {
         </nav>
       </div>
       <div className="footer_center">
-        <a href="/" className="footer_ligo-link">
+        <NavLink to="/" className="footer_ligo-link" data-testid="logo-link">
           <img
             className="footer_logo-image"
             src={new URL(`../../assets/logo.svg`, import.meta.url).href}
             alt="Rs School logo"
           />
-        </a>
+        </NavLink>
         <SocialMediaLink />
         <p className="footer_org-info">
           ООО «Очаровательная леди»

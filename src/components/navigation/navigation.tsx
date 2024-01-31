@@ -12,6 +12,7 @@ const Navigation = () => {
           <nav className="navigation-panel_left">
             <NavLink
               to="/Services"
+              data-testid="drop-down-link"
               className={({ isActive }) =>
                 (isActive ? 'navigation-panel_active' : 'inactive') + ' navigation-panel_main-link'
               }
@@ -30,9 +31,12 @@ const Navigation = () => {
               Акции
             </NavLink>
           </nav>
-          <a href="/" className="logo">
+          <NavLink to="/" className="logo" data-testid="logo-link">
             <img src={new URL(`../../assets/logo.svg`, import.meta.url).href} alt="NStyle logo" />
-          </a>
+          </NavLink>
+          {/* <a href="/" className="logo" data-testid="logo-link">
+            <img src={new URL(`../../assets/logo.svg`, import.meta.url).href} alt="NStyle logo" />
+          </a> */}
           <nav className="navigation-panel_right">
             <NavLink
               to="/Blog"
@@ -66,6 +70,7 @@ const Navigation = () => {
             }
             onMouseEnter={() => setisShowMoreServices(true)}
             onMouseLeave={() => setisShowMoreServices(false)}
+            data-testid="drop-down-element"
           >
             <NavLink
               to="/Services/Haidress"
