@@ -33,9 +33,11 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "incremental": true,
+
+    //Add testing types
+    "types": ["node", "jest", "@testing-library/jest-dom"],
   },
   "include": ["src/**/*", "types/*", "server.ts", "node_modules/vite/types/*"],
-  "references": [{ "path": "./tsconfig.node.json" }],
   "ts-node": {
     "transpileOnly": true,
     "compilerOptions": {
