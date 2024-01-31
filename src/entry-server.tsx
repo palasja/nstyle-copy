@@ -3,7 +3,7 @@ import ReactDOMServer from 'react-dom/server'
 import { StaticRouter } from 'react-router-dom/server';
 import App from './App'
 
-export default function render() {
+export function render() {
   
   const html = ReactDOMServer.renderToString(
     <React.StrictMode>
@@ -17,3 +17,5 @@ export default function render() {
   )
   return { html }
 }
+
+export default render;

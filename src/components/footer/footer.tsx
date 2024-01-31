@@ -51,7 +51,7 @@ const Footer = () => {
       </div>
       <div className="footer_right">
         <img
-          src={arrow}
+          src={new URL(`../../assets/images/arrow-right.png`, import.meta.url).href}
           alt="Arrow right"
         />
         <nav className="footer_nav">
