@@ -8,6 +8,7 @@ const TopPanel = () => {
   const [currentRoute, setCurrentRoute] = useState('');
   useEffect(() => {
     setCurrentRoute(window.location.pathname);
+    document.title = getTopPanelText();
   }, [currentRoute, setCurrentRoute]);
 
   const getCurrentPathLink = (): JSX.Element[] => {
