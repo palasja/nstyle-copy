@@ -1,4 +1,4 @@
-import TopPanel from '../../components/topPanel';
+// import TopPanel from '../../components/topPanel';
 import Dashboard from '../../components/Dashboard';
 import './contacts.css';
 

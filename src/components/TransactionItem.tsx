@@ -1,10 +1,10 @@
 // @ts-ignore
 import { useState, useEffect } from "react";
-import { deleteTransaction, updateTransaction } from "../../db/operations"
+import { updateTransaction } from "../../db/operations"
 // @ts-ignore
 
 const acceptStyle = `px-4 py-2 rounded-md text-white bg-indigo-500 hover:bg-indigo-800 disabled:opacity-50 disabled:cursor-not-allowed`
-const rejectStyle = `px-4 py-2 ml-2 rounded-md bg-yellow-200 hover:bg-yellow-400 disabled:opacity-50 disabled:cursor-not-allowed`
+// const rejectStyle = `px-4 py-2 ml-2 rounded-md bg-yellow-200 hover:bg-yellow-400 disabled:opacity-50 disabled:cursor-not-allowed`
 
 // @ts-ignore
 export default function TransactionItem({transaction}) {
