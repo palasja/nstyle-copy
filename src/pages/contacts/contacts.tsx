@@ -1,12 +1,10 @@
-// import TopPanel from '../../components/topPanel';
-import Dashboard from '../../components/Dashboard';
+import TopPanel from '../../components/topPanel';
 import './contacts.css';
 
 const Contacts = () => {
   return (
     <>
-    <Dashboard />
-      {/* <TopPanel /> */}
+      <TopPanel />
     </>
   );
 };

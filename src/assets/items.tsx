@@ -1,6 +1,7 @@
-import { ServiceCostInfo, ServiceCostTable } from 'src/type/costType';
+// import { ServiceCostInfo, ServiceCostTable } from 'src/type/costType';
 
-const Eyebrows: ServiceCostTable = {
+/**
+ export const Eyebrows: ServiceCostTable = {
   id: 1,
   name: 'Наращивание ресниц',
   services: [
@@ -42,7 +43,7 @@ const Eyebrows: ServiceCostTable = {
   ],
 };
 
-const Eyelashes: ServiceCostTable = {
+export const Eyelashes: ServiceCostTable = {
   id: 1,
   name: 'Брови',
   services: [
@@ -118,8 +119,9 @@ const EyebrowsEyelashes: ServiceCostInfo = {
   name: '|  БРОВИ И РЕСНИЦЫ',
   service: [Eyebrows, Eyelashes],
 };
+ */
 
-const pathDictionary: { [key: string]: string } = {
+export const pathDictionary: { [key: string]: string } = {
   '': 'Главная',
   Blog: 'Блог',
   Contacts: 'Контакты',
@@ -132,4 +134,3 @@ const pathDictionary: { [key: string]: string } = {
   Cosmetic: 'Косметические',
   Manicure: 'Ногтевой сервис',
 };
-export { EyebrowsEyelashes, pathDictionary };

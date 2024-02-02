@@ -1,1 +1,1 @@
-module.exports = require('./functions/api.js')
+module.exports = require('./functions/api.js');

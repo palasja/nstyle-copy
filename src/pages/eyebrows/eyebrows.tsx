@@ -1,17 +1,29 @@
 import './eyebrows.css';
 import TopPanel from '../../components/topPanel';
 import CostTable from '../..//components/costTable/costTabele';
-import { EyebrowsEyelashes } from '../../assets/items';
+import { useEffect, useState } from 'react';
+import { allServices } from '../../../db/operations';
+import { ResponseCostTable, ServiceCostInfo } from '../../type/costType';
 
 const Eyebrows = () => {
-  const eyebrowsEyelashes = EyebrowsEyelashes;
+  const [eyebrowsEyelashes, setEyebrowsEyelashes] = useState<ServiceCostInfo>();
+
+  useEffect(() => {
+    getAllServices();
+  }, []);
+
+  const getAllServices = async () => {
+    const response = (await allServices()) as ResponseCostTable;
+    setEyebrowsEyelashes(response.data[0].data);
+  };
+
   return (
     <>
       <TopPanel />
       <main>
         <h3 className="service-cost">Стоимость услуг</h3>
-        <h4 className="service-type">{eyebrowsEyelashes.name}</h4>
-        {EyebrowsEyelashes.service.map((serviceTable) => (
+        <h4 className="service-type">| {eyebrowsEyelashes?.name}</h4>
+        {eyebrowsEyelashes?.tables.map((serviceTable) => (
           <CostTable
             key={serviceTable.id}
             services={serviceTable.services}
