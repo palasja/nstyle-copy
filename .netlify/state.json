@@ -1,0 +1,19 @@
+{
+  "geolocation": {
+    "data": {
+      "city": "Gomel",
+      "country": {
+        "code": "BY",
+        "name": "Belarus"
+      },
+      "subdivision": {
+        "code": "HO",
+        "name": "Homyel’ Voblasc’"
+      },
+      "timezone": "Europe/Minsk",
+      "latitude": 52.4319,
+      "longitude": 30.9731
+    },
+    "timestamp": 1706697334251
+  }
+}

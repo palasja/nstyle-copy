@@ -1,18 +1,25 @@
 type ServiceCostRow = {
-  id: number;
+  id: string;
   name: string;
   cost: number;
 };
 
 type ServiceCostTable = {
-  id: number;
+  id: string;
   name: string;
   services: ServiceCostRow[];
 };
 
 type ServiceCostInfo = {
   name: string;
-  service: ServiceCostTable[];
+  tables: ServiceCostTable[];
 };
 
-export type { ServiceCostInfo, ServiceCostTable, ServiceCostRow };
+type ResponseCostTable = {
+  data: [
+    {
+      data: ServiceCostInfo;
+    },
+  ];
+};
+export type { ResponseCostTable, ServiceCostInfo, ServiceCostTable, ServiceCostRow };
