@@ -16,7 +16,7 @@ import Cosmetic from './pages/cosmetic';
 import Manicure from './pages/manicure';
 import Home from './pages/home';
 
-
+;
 function App() {
   return (
     <>
