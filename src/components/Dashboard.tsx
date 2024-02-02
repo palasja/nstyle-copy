@@ -7,35 +7,36 @@ export default function Dashboard() {
   
   const [listTransaction, setListTransaction] = useState([]);
 
-  const transactionSetRef = getSetRef('Transaction');
-  const streamOptions = { fields: [ 'action', 'document' ] }
+  // const transactionSetRef = getSetRef('Transaction');
+  // const streamOptions = { fields: [ 'action', 'document' ] }
 
   // @ts-ignore
-  const streamClient = client.stream(transactionSetRef, streamOptions)
-    // @ts-ignore
-    .on('start', start => { 
-      console.log('start', start);
-    })
-    // @ts-ignore
-    .on('set', set => {
-      if(set.action === 'remove') {
-        // @ts-ignore
-        console.log('remove', set.document.ref.value.id);
-        setListTransaction(
-          // @ts-ignore
-          listTransaction.filter(item => item.id !== set.document.ref.value.id)
-        );
-      }
-      // if(set.action === 'add') { 
-      //   console.log('add', set.document);
-      //   setListTransaction([...listTransaction, {
-      //     id: set.document.ref.value.id,
-      //     status: 'Pending',
-      //   }]);
-      // }
-    })
+  // const streamClient = client.stream(transactionSetRef, streamOptions)
+  //   // @ts-ignore
+  //   .on('start', start => { 
+  //     console.log('start', start);
+  //   })
+  //   // @ts-ignore
+  //   .on('set', set => {
+  //     if(set.action === 'remove') {
+  //       // @ts-ignore
+  //       console.log('remove', set.document.ref.value.id);
+  //       setListTransaction(
+  //         // @ts-ignore
+  //         listTransaction.filter(item => item.id !== set.document.ref.value.id)
+  //       );
+  //     }
+  //     // if(set.action === 'add') { 
+  //     //   console.log('add', set.document);
+  //     //   setListTransaction([...listTransaction, {
+  //     //     id: set.document.ref.value.id,
+  //     //     status: 'Pending',
+  //     //   }]);
+  //     // }
+  //   })
 
   useEffect(() => {
+    
     getAllTransaction();
   }, []);
 
@@ -52,6 +53,7 @@ export default function Dashboard() {
 
     // @ts-ignore
     const allTransaction = [];
+
     // @ts-ignore
     transactions.data.forEach(element => {
       allTransaction.push({
@@ -61,6 +63,8 @@ export default function Dashboard() {
     });
     // @ts-ignore
     setListTransaction(allTransaction);
+    // @ts-ignore
+    console.log(allTransaction);
   }
 
   return (
