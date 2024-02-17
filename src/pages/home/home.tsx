@@ -4,6 +4,7 @@ import './home.css';
 import { SliderImageProps } from '../../type/costType';
 import { homeSlidesInfo } from '../../assets/items';
 import HomeSlider from '../../components/homeSlider';
+import HomeNavigation from '../../components/homeNavigation';
 
 const Home = () => {
   useEffect(() => {
@@ -32,7 +33,10 @@ const Home = () => {
   }
   // const [sliderImageInfo, setSliderImageInfo] = useState<SliderImageProps>(map.get('haidress') as SliderImageProps);
   return (
-    <HomeSlider />
+    <div>
+      <HomeSlider />
+      <HomeNavigation />
+    </div>
   );
 };
 
