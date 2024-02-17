@@ -13,8 +13,8 @@ import Eyebrows from './pages/eyebrows';
 import Vacancies from './pages/vacancies/vacancies';
 import Haidress from './pages/haidress';
 import Cosmetic from './pages/cosmetic';
-import Manicure from './pages/manicure';
 import Home from './pages/home';
+import Manicure from './pages/manicure';
 
 function App() {
   return (

@@ -27,7 +27,11 @@ type SliderImageProps = {
   link: string;
   serviceName: string;
   img: string;
-  marginImage?: number;
+};
+type ServiceImageLinkProps = {
+  link: string;
+  serviceName: string;
+  img: string;
 };
 export type {
   SliderImageProps,
@@ -35,4 +39,5 @@ export type {
   ServiceCostInfo,
   ServiceCostTable,
   ServiceCostRow,
+  ServiceImageLinkProps,
 };

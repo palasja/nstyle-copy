@@ -3,7 +3,7 @@ import './sliderImage.css';
 import { SliderImageProps } from '../../type/costType';
 
 const SliderImage = (props: SliderImageProps) => {
-  const { link, serviceName, img, marginImage } = props;
+  const { link, serviceName, img } = props;
   return (
     <section
       className="slider-panel"
