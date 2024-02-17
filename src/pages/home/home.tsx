@@ -1,10 +1,7 @@
 import { useEffect, useState } from 'react';
-import SliderImage from '../../components/sliderImage';
 import './home.css';
-import { SliderImageProps } from '../../type/costType';
-import { homeSlidesInfo } from '../../assets/items';
 import HomeSlider from '../../components/homeSlider';
-import HomeNavigation from '../../components/homeNavigation';
+import ServiceNavigation from '../../components/serviceNavigation';
 
 const Home = () => {
   useEffect(() => {
@@ -35,7 +32,7 @@ const Home = () => {
   return (
     <div>
       <HomeSlider />
-      <HomeNavigation />
+      <ServiceNavigation />
     </div>
   );
 };

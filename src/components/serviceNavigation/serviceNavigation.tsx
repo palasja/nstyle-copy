@@ -1,4 +1,4 @@
-import './homeNavigation.css'
+import './serviceNavigation.css'
 import ServiceImageLink from '../serviceImageLink';
 
 const HomeNavigation = () => {
