@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './home.css';
 import HomeSlider from '../../components/homeSlider';
 import ServiceNavigation from '../../components/serviceNavigation';
