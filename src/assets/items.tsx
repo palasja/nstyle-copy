@@ -1,5 +1,7 @@
 // import { ServiceCostInfo, ServiceCostTable } from 'src/type/costType';
 
+import { SliderImageProps } from "../type/costType";
+
 /**
  export const Eyebrows: ServiceCostTable = {
   id: 1,
@@ -134,3 +136,25 @@ export const pathDictionary: { [key: string]: string } = {
   Cosmetic: 'Косметические',
   Manicure: 'Ногтевой сервис',
 };
+
+export const homeSlidesInfo = new Map<string, SliderImageProps>();
+homeSlidesInfo.set('haidress', {
+  link: '/Services/Haidress',
+  serviceName: 'Парикхмахерские услуги',
+  img: new URL(`./images/home/headress.jpg`, import.meta.url).href,
+});
+homeSlidesInfo.set('eyebrows', {
+  link: '/Services/Eyebrows',
+  serviceName: 'Брови | Ресницы | Макияж',
+  img: new URL(`./images/home/eyebrows.jpg`, import.meta.url).href,
+});
+homeSlidesInfo.set('cosmetic', {
+  link: '/Services/Cosmetic',
+  serviceName: 'Косметология',
+  img: new URL(`./images/home/cosmetic.jpg`, import.meta.url).href,
+});
+homeSlidesInfo.set('manicure', {
+  link: '/Services/Manicure',
+  serviceName: 'Ногтевой сервис',
+  img: new URL(`./images/home/manicure.jpg`, import.meta.url).href,
+});

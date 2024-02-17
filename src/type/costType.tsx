@@ -22,4 +22,17 @@ type ResponseCostTable = {
     },
   ];
 };
-export type { ResponseCostTable, ServiceCostInfo, ServiceCostTable, ServiceCostRow };
+
+type SliderImageProps = {
+  link: string;
+  serviceName: string;
+  img: string;
+  marginImage?: number;
+};
+export type {
+  SliderImageProps,
+  ResponseCostTable,
+  ServiceCostInfo,
+  ServiceCostTable,
+  ServiceCostRow,
+};

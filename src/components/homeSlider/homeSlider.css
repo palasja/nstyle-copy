@@ -1,0 +1,38 @@
+.slider {
+  display: flex;
+  width: calc(100vw - 9px);
+  height: 860px;
+  position: relative;
+  left: calc(-50vw + 50%);
+  overflow-x: hidden;
+}
+.buttons-panel {
+  display: flex;
+  position: relative;
+  top: -130px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.change-image_container {
+  height: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.change-image {
+  width: 30px;
+  height: 4px;
+  background: #d6d6d6;
+  display: inline-block;
+  opacity: 0.6;
+  transition: 0.4s;
+}
+
+.slider-panel__active{
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transition: 2000ms;
+}
