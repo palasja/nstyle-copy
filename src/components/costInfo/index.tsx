@@ -1,2 +1,2 @@
-import CostInfo from "./costInfo";
+import CostInfo from './costInfo';
 export default CostInfo;

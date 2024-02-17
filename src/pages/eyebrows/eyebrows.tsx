@@ -8,7 +8,11 @@ const Eyebrows = () => {
     <>
       <TopPanel />
       <main>
-        <CostInfo id={tablesNameIdMap.get('eyebrows') as string} showCostHeaedr={true} isOneLine={true} />
+        <CostInfo
+          id={tablesNameIdMap.get('eyebrows') as string}
+          showCostHeaedr={true}
+          isOneLine={true}
+        />
         <section className="additional">
           <img src={new URL(`../../assets/images/additionsl_eyebrows.jpg`, import.meta.url).href} />
           <h4 className="additional_text">Наращивание ресниц в Минске</h4>

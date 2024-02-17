@@ -75,7 +75,7 @@
   letter-spacing: 1.75px;
 }
 
-.slider_text__active{
+.slider_text__active {
   opacity: 1;
   gap: 0;
   transition: 1000ms;

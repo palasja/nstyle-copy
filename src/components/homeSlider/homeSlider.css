@@ -30,7 +30,7 @@
   transition: 0.4s;
 }
 
-.slider-panel__active{
+.slider-panel__active {
   position: absolute;
   opacity: 1;
   visibility: visible;

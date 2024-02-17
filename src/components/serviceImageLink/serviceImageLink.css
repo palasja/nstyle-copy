@@ -1,18 +1,18 @@
-.nav-link_link{
+.nav-link_link {
   display: inline-block;
   text-align: left;
 }
-.nav-link-image{
+.nav-link-image {
   max-width: 100%;
   transition: all 0.3s ease-in-out;
 }
 
-.nav-link_name{
+.nav-link_name {
   margin-left: 20px;
   position: relative;
   top: -40px;
   text-align: left;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 3px;
@@ -21,8 +21,8 @@
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
-.nav-link_name::after{
-  content: "";
+.nav-link_name::after {
+  content: '';
   position: absolute;
   width: 27px;
   height: 2px;
@@ -38,16 +38,16 @@
   transition: all 0.3s ease-in-out;
 }
 
-.nav-link_name:hover{
+.nav-link_name:hover {
   color: #bbb;
   transition: all 0.3s ease-in-out;
-} 
- .nav-link-image:hover + .nav-link_name::after{
+}
+.nav-link-image:hover + .nav-link_name::after {
   width: 54px;
   right: -70px;
   transition: all 0.3s ease-in-out;
 }
-.nav-link-image:hover + .nav-link_name{
+.nav-link-image:hover + .nav-link_name {
   margin-left: 30px;
   transition: all 0.3s ease-in-out;
 }

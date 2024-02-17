@@ -6,6 +6,12 @@ import { faLocationCrosshairs } from '@fortawesome/free-solid-svg-icons';
 
 const TopPanel = () => {
   const [currentRoute, setCurrentRoute] = useState('');
+
+  const getTopPanelText = (): string => {
+    const mainPath = currentRoute.split(new RegExp('\\?'))[0];
+    const path = mainPath.split(new RegExp('/')).pop() as string;
+    return pathDictionary[path];
+  };
   useEffect(() => {
     setCurrentRoute(window.location.pathname);
     document.title = getTopPanelText();
@@ -34,12 +40,6 @@ const TopPanel = () => {
       });
     }
     return res;
-  };
-
-  const getTopPanelText = (): string => {
-    const mainPath = currentRoute.split(new RegExp('\\?'))[0];
-    const path = mainPath.split(new RegExp('/')).pop() as string;
-    return pathDictionary[path];
   };
 
   return (

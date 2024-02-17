@@ -1,2 +1,2 @@
-import ServiceImageLink from "./serviceImageLink";
+import ServiceImageLink from './serviceImageLink';
 export default ServiceImageLink;

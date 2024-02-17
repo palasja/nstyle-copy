@@ -5,10 +5,7 @@ import { SliderImageProps } from '../../type/costType';
 const SliderImage = (props: SliderImageProps) => {
   const { link, serviceName, img } = props;
   return (
-    <section
-      className="slider-panel"
-      style={{ backgroundImage: `url(${img})` }}
-    >
+    <section className="slider-panel" style={{ backgroundImage: `url(${img})` }}>
       <div className="slider_text text">
         <h2 className="text_service-name">{serviceName}</h2>
         <h1 className="text_company-name">New Style</h1>

@@ -1,2 +1,2 @@
-import HomeSlider from "./homeSlider";
-export default HomeSlider
+import HomeSlider from './homeSlider';
+export default HomeSlider;

@@ -1,16 +1,15 @@
-.navigation-images{
+.navigation-images {
   display: grid;
   grid-template-columns: 350px 730px;
   gap: 30px;
   padding: 100px 0 35px 0;
-
 }
-.description{
+.description {
   text-align: left;
 }
-.description-name{
-  font-family: "Raleway", sans-serif;
-  
+.description-name {
+  font-family: 'Raleway', sans-serif;
+
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 3px;
@@ -18,28 +17,28 @@
   font-weight: 700;
   margin: 0 0 20px 0;
 }
-.description-expiriance{
-  font-family: "Roboto Slab", sans-serif;
+.description-expiriance {
+  font-family: 'Roboto Slab', sans-serif;
   text-transform: uppercase;
-  color: #353B41;
+  color: #353b41;
   font-size: 56px;
   line-height: 54px;
   font-weight: 400;
   margin: 0 0 35px 0;
 }
-.description-coloring{
-  font-family: "Roboto", sans-serif;
+.description-coloring {
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
   margin: 0 0 70px 0;
 }
-.nav-link-container{
+.nav-link-container {
   display: flex;
   flex-direction: column;
 }
 
-.nav-link_subcontainer{
+.nav-link_subcontainer {
   display: grid;
   grid-template-columns: 480px 225px;
   gap: 25px;

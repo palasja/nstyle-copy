@@ -7,7 +7,11 @@ const Manicure = () => {
   return (
     <>
       <TopPanel />
-      <CostInfo id={tablesNameIdMap.get('manicure') as string} showCostHeaedr={true} isOneLine={true} />
+      <CostInfo
+        id={tablesNameIdMap.get('manicure') as string}
+        showCostHeaedr={true}
+        isOneLine={true}
+      />
     </>
   );
 };

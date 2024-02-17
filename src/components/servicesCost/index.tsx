@@ -1,2 +1,2 @@
-import ServicesCost from './servicesCost'
+import ServicesCost from './servicesCost';
 export default ServicesCost;

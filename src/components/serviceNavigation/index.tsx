@@ -1,2 +1,2 @@
-import ServiceNavigation from "./serviceNavigation";
+import ServiceNavigation from './serviceNavigation';
 export default ServiceNavigation;

@@ -7,7 +7,11 @@ const Cosmetic = () => {
   return (
     <>
       <TopPanel />
-      <CostInfo id={tablesNameIdMap.get('cosmeticEstetic') as string} showCostHeaedr={true} isOneLine={true}/>
+      <CostInfo
+        id={tablesNameIdMap.get('cosmeticEstetic') as string}
+        showCostHeaedr={true}
+        isOneLine={true}
+      />
       <CostInfo id={tablesNameIdMap.get('depilation') as string} />
     </>
   );

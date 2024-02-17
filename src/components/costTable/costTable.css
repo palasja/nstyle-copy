@@ -8,7 +8,7 @@
 }
 
 .service-list_name {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 24px;
   line-height: 32px;
   font-weight: 400;
@@ -30,7 +30,7 @@
   margin-bottom: 8px;
   font-weight: 500;
 }
-.service-list_cost{
+.service-list_cost {
   white-space: nowrap;
 }
 .service-list_arrow {

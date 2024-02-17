@@ -10,7 +10,7 @@ import faunadb, {
   Map,
   Delete,
   Update,
-  query as q
+  query as q,
 } from 'faunadb';
 
 const client = new faunadb.Client({
@@ -43,28 +43,22 @@ export const allServices = () =>
     )
   );
 
-
-  export const eyebrowServices1 = async () => {
-    let allBlogs = await client.query(
-      q.Map(
-        q.Paginate(q.Documents(q.Collection("ServicesCost"))),
-        q.Lambda("X", q.Get(q.Var("X")))
-      )
-    )
-    console.log(allBlogs.data);
-    return allBlogs.data
-  }
+export const eyebrowServices1 = async () => {
+  let allBlogs = await client.query(
+    q.Map(q.Paginate(q.Documents(q.Collection('ServicesCost'))), q.Lambda('X', q.Get(q.Var('X'))))
+  );
+  console.log(allBlogs.data);
+  return allBlogs.data;
+};
 
 export const getServiceByType = async (id) => {
   try {
-    let services = await client.query(
-      q.Get(q.Ref(q.Collection('ServicesCost'), id))
-    )
-    return services.data
+    let services = await client.query(q.Get(q.Ref(q.Collection('ServicesCost'), id)));
+    return services.data;
   } catch (error) {
-    return
+    return;
   }
-}
+};
 
 export const updateTransaction = (id, data) =>
   client.query(

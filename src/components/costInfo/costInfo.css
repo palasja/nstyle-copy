@@ -1,17 +1,17 @@
-.service-cost_container{
+.service-cost_container {
   display: grid;
-    grid-template-columns: 540px 540px;
-    text-align: left;
-    gap: 40px;
-    align-items: start;
+  grid-template-columns: 540px 540px;
+  text-align: left;
+  gap: 40px;
+  align-items: start;
 }
-.service-cost_container__oneline{
+.service-cost_container__oneline {
   display: grid;
-    grid-template-columns: 540px;
-    justify-content: center;
-    text-align: left;
-    gap: 40px;
-    align-items: start;
+  grid-template-columns: 540px;
+  justify-content: center;
+  text-align: left;
+  gap: 40px;
+  align-items: start;
 }
 .service-cost {
   margin-bottom: 35px;
