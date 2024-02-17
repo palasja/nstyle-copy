@@ -1,7 +1,7 @@
 import './serviceNavigation.css'
 import ServiceImageLink from '../serviceImageLink';
 
-const HomeNavigation = () => {
+const ServiceNavigation = () => {
   return(
     <section className='navigation-images'>
       <div>
@@ -33,4 +33,4 @@ const HomeNavigation = () => {
   );
 }
 
-export default HomeNavigation
+export default ServiceNavigation

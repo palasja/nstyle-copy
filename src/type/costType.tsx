@@ -1,7 +1,9 @@
 type ServiceCostRow = {
   id: string;
   name: string;
-  cost: number;
+  cost?: number;
+  minCost?: number;
+  maxCost?: number;
 };
 
 type ServiceCostTable = {
