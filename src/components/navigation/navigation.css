@@ -1,5 +1,5 @@
 .screen-wide {
-  width: 100vw;
+  width: calc(100vw - 9px);
   position: relative;
   display: flex;
   flex-direction: column;

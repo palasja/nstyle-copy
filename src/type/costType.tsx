@@ -1,7 +1,9 @@
 type ServiceCostRow = {
   id: string;
   name: string;
-  cost: number;
+  cost?: number;
+  minCost?: number;
+  maxCost?: number;
 };
 
 type ServiceCostTable = {
@@ -22,4 +24,22 @@ type ResponseCostTable = {
     },
   ];
 };
-export type { ResponseCostTable, ServiceCostInfo, ServiceCostTable, ServiceCostRow };
+
+type SliderImageProps = {
+  link: string;
+  serviceName: string;
+  img: string;
+};
+type ServiceImageLinkProps = {
+  link: string;
+  serviceName: string;
+  img: string;
+};
+export type {
+  SliderImageProps,
+  ResponseCostTable,
+  ServiceCostInfo,
+  ServiceCostTable,
+  ServiceCostRow,
+  ServiceImageLinkProps,
+};

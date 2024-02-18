@@ -8,6 +8,7 @@
   align-items: center;
   left: calc(-50vw + 50%);
   background: url(../../assets/images/topPanels/eyebrows.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
 }
@@ -47,4 +48,9 @@
   color: #fff;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.top-panel_pattran {
+  width: inherit;
+  background: url(../../assets/images/pattran.png);
 }

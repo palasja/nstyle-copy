@@ -1,0 +1,89 @@
+.slider-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+  /* background-image:url(../../assets/images/home/eyebrows.jpg) ; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  opacity: 0.6;
+  visibility: hidden;
+  transition: 2000ms;
+}
+.slider-panel__active {
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transition: 2000ms;
+}
+.slider-panel img {
+  width: 100vw;
+  z-index: 10;
+  height: 90px;
+}
+
+.slider_text {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  opacity: 0.5;
+}
+.text_service-name {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  margin: -200px 0 8px 0;
+}
+.text_service-name::before {
+  content: '';
+  position: absolute;
+  width: 230px;
+  height: 2px;
+  margin-top: 15px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  margin-left: -250px;
+}
+.text_service-name::after {
+  content: '';
+  position: absolute;
+  width: 230px;
+  height: 2px;
+  margin-top: 15px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+.text_company-name {
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 120px;
+  font-weight: 400;
+  line-height: 120px;
+  color: #fff;
+  margin: 0 0 35px 0;
+}
+.text_cost-link {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.75px;
+}
+
+.slider_text__active {
+  opacity: 1;
+  gap: 0;
+  transition: 1000ms;
+}
