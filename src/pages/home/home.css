@@ -1,2 +1,29 @@
-.container {
+.promo-info{
+  margin-bottom: 100px;
+}
+.promo-info_style {
+  margin: 0px 0px 30px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: "Raleway";
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.promo-info_anonce{
+  font-family: "Roboto Slab";
+  margin-bottom: 35px;
+    color: #353B41;
+    font-size: 56px;
+    line-height: 54px;
+    font-weight: 400;
+}
+
+.promo-info_social{
+  font-family: "Raleway", sans-serif;
+  color: #7F7F7F;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
 }
