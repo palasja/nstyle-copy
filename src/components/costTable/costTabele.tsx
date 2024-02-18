@@ -4,7 +4,6 @@ import './costTable.css';
 const CostTable = (props: ServiceCostTable) => {
   const { name, services } = props;
   const getCostString = (service: ServiceCostRow): string => {
-    console.log(service);
     let res = '';
     if (service.cost !== undefined) {
       res = `${service.cost} руб.`;

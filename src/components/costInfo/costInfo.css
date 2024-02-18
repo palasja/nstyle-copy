@@ -1,6 +1,6 @@
 .service-cost_container {
   display: grid;
-  grid-template-columns: 540px 540px;
+  grid-template-columns: 1fr 1fr;
   text-align: left;
   gap: 40px;
   align-items: start;

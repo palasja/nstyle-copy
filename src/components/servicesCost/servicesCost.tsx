@@ -1,5 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import './servicesCost.css';
+import { tablesNameIdMap } from '../../assets/items';
+import CostInfo from '../costInfo';
 
 const ServicesCost = () => {
   return (
@@ -15,6 +17,11 @@ const ServicesCost = () => {
             Все Услуги
           </NavLink>
         </div>
+      </div>
+      <div className='home-cost'>
+      <CostInfo
+          id={tablesNameIdMap.get('homePage') as string}
+        />
       </div>
     </section>
   );

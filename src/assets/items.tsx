@@ -181,6 +181,7 @@ export const tablesNameIdMap = new Map<string, string>([
   ['hairstyling', '390014172291662032'],
   ['haircoloring', '390014187587240139'],
   ['hairservice', '390014224220291280'],
+  ['homePage','390062472432713930'],
 ]);
 
 export const tableIdNameMap = new Map<string, string>();
