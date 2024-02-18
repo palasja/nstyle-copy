@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 coverage/
+.netlify/
 
 # Editor directories and files
 .vscode/*

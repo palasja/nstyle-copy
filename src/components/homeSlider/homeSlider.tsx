@@ -23,6 +23,7 @@ const HomeSlider = () => {
       document
         .getElementsByClassName('slider_text__active')[0]
         .classList.remove('slider_text__active');
+        
     }
 
     //add new active slide

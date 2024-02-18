@@ -8,8 +8,15 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
-  opacity: 0.3;
+  opacity: 0.6;
   visibility: hidden;
+  transition: 2000ms;
+}
+.slider-panel__active {
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transition: 2000ms;
 }
 .slider-panel img {
   width: 100vw;
