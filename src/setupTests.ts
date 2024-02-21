@@ -3,11 +3,10 @@ import { cleanup } from '@testing-library/react';
 import * as matchers from '@testing-library/jest-dom/matchers';
 expect.extend(matchers);
 
+import { expect } from 'vitest';
 afterEach(() => {
   cleanup();
 });
-// import { expect } from 'vitest';
-// import { server } from './mock/server';
 
 // beforeAll(() => {
 //   server.listen();
@@ -15,6 +14,7 @@ afterEach(() => {
 
 // afterEach(() => {
 //   server.resetHandlers();
+
 // });
 
 // afterAll(() => {

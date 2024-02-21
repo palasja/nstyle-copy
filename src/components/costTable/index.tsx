@@ -1,3 +1,3 @@
-import CostTable from './costTabele';
+import CostTable from './costTable';
 
 export default CostTable;

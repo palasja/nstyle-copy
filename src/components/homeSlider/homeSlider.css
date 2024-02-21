@@ -19,9 +19,6 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-}
-
-.change-image {
   width: 30px;
   height: 4px;
   background: #d6d6d6;
@@ -30,3 +27,7 @@
   transition: 0.4s;
 }
 
+.change-image_container:hover {
+  opacity: 0.3;
+  transition: 0.4s;
+}

@@ -21,7 +21,7 @@ const CostTable = (props: ServiceCostTable) => {
         {services.map((costRow) => (
           <li key={costRow.id} className="service-list_list__row">
             {costRow.name}
-            <span className="service-list_cost">{getCostString(costRow)}</span>
+            <span className="service-list_cost" data-testid="service-cost">{getCostString(costRow)}</span>
           </li>
         ))}
       </ul>

@@ -43,16 +43,12 @@ const HomeSlider = () => {
       </div>
       <div className="buttons-panel">
         <div onClick={() => showSlide(1)} className="change-image_container">
-          <span className="change-image"></span>
         </div>
         <div onClick={() => showSlide(2)} className="change-image_container">
-          <span className="change-image"></span>
         </div>
         <div onClick={() => showSlide(3)} className="change-image_container">
-          <span className="change-image"></span>
         </div>
-        <div onClick={() => showSlide(4)} className="change-image_container">
-          <span className="change-image"></span>
+        <div onClick={() => showSlide(4)} data-testid="last-button" className="change-image_container">
         </div>
       </div>
     </div>
