@@ -1,4 +1,4 @@
-.upp-button{
+.upp-button {
   height: 36px;
   width: 36px;
   border-radius: 4px;
@@ -16,8 +16,7 @@
   transition: 500ms;
 }
 
-.show{
+.show {
   opacity: 1;
   transition: 500ms;
 }
-

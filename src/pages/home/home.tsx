@@ -10,10 +10,10 @@ const Home = () => {
       <HomeSlider />
       <ServiceNavigation />
       <ServicesCost />
-      <section className='promo-info'>
-        <h3 className='promo-info_style'>СЛЕДИ ЗА СТИЛЕМ!</h3>
-        <h2 className='promo-info_anonce'>Еженедельные анонсы</h2>
-        <p className='promo-info_social'>На сайте и в социальных сетях</p>
+      <section className="promo-info">
+        <h3 className="promo-info_style">СЛЕДИ ЗА СТИЛЕМ!</h3>
+        <h2 className="promo-info_anonce">Еженедельные анонсы</h2>
+        <p className="promo-info_social">На сайте и в социальных сетях</p>
         <SocialMediaLink />
       </section>
     </div>

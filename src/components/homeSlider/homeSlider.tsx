@@ -23,7 +23,6 @@ const HomeSlider = () => {
       document
         .getElementsByClassName('slider_text__active')[0]
         .classList.remove('slider_text__active');
-        
     }
 
     //add new active slide
@@ -42,14 +41,14 @@ const HomeSlider = () => {
         <SliderImage {...(homeSlidesInfo.get('manicure') as SliderImageProps)} />
       </div>
       <div className="buttons-panel">
-        <div onClick={() => showSlide(1)} className="change-image_container">
-        </div>
-        <div onClick={() => showSlide(2)} className="change-image_container">
-        </div>
-        <div onClick={() => showSlide(3)} className="change-image_container">
-        </div>
-        <div onClick={() => showSlide(4)} data-testid="last-button" className="change-image_container">
-        </div>
+        <div onClick={() => showSlide(1)} className="change-image_container"></div>
+        <div onClick={() => showSlide(2)} className="change-image_container"></div>
+        <div onClick={() => showSlide(3)} className="change-image_container"></div>
+        <div
+          onClick={() => showSlide(4)}
+          data-testid="last-button"
+          className="change-image_container"
+        ></div>
       </div>
     </div>
   );

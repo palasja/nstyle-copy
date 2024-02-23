@@ -18,10 +18,8 @@ const ServicesCost = () => {
           </NavLink>
         </div>
       </div>
-      <div className='home-cost'>
-      <CostInfo
-          id={tablesNameIdMap.get('homePage') as string}
-        />
+      <div className="home-cost">
+        <CostInfo id={tablesNameIdMap.get('homePage') as string} />
       </div>
     </section>
   );

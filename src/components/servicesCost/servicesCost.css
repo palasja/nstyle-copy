@@ -49,6 +49,6 @@
 .all-services:hover {
   background-color: rgba(0, 0, 0, 0.75);
 }
-.home-cost .service-list:nth-child(5){
+.home-cost .service-list:nth-child(5) {
   grid-row: span 2;
 }
