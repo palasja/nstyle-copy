@@ -3,6 +3,7 @@ import './topPanel.css';
 import { pathDictionary } from '../../assets/items';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationCrosshairs } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom';
 
 const TopPanel = () => {
   const [currentRoute, setCurrentRoute] = useState('');
@@ -32,9 +33,7 @@ const TopPanel = () => {
           );
         } else {
           res.push(
-            <a className="top-panel_link" key={i} href={'/' + p}>
-              {pathDictionary[p]}
-            </a>
+            <NavLink className="top-panel_link" key={i} to={'/' + p}>{pathDictionary[p]}</NavLink>
           );
         }
       });
