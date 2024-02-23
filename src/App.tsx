@@ -15,6 +15,7 @@ import Haidress from './pages/haidress';
 import Cosmetic from './pages/cosmetic';
 import Home from './pages/home';
 import Manicure from './pages/manicure';
+import UppButton from './components/uppButton';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         </Routes>
       </div>
       <Footer />
+      <UppButton />
     </>
   );
 }

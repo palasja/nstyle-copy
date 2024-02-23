@@ -15,8 +15,8 @@ import faunadb, {
 
 const client = new faunadb.Client({
   secret: import.meta.env.VITE_APP_FAUNA_KEY,
-  domain: import.meta.env.REACT_APP_FAUNA_DOMAIN
-    ? import.meta.env.REACT_APP_FAUNA_DOMAIN
+  domain: import.meta.env.VITE_APP_FAUNA_DOMAIN
+    ? import.meta.env.VITE_APP_FAUNA_DOMAIN
     : 'db.fauna.com',
 });
 

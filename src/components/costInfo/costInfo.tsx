@@ -19,7 +19,7 @@ const CostInfo = (props: { id: string; showCostHeaedr?: boolean; isOneLine?: boo
   return (
     <section>
       {showCostHeaedr && <h3 className="service-cost">Стоимость услуг</h3>}
-      {costInfo?.name &&  <h4 className="service-type">| {costInfo?.name}</h4>}
+      {costInfo?.name && <h4 className="service-type">| {costInfo?.name}</h4>}
       <div className={isOneLine ? 'service-cost_container__oneline' : 'service-cost_container'}>
         {costInfo?.tables.map((serviceTable) => (
           <CostTable

@@ -1,0 +1,22 @@
+.upp-button {
+  height: 36px;
+  width: 36px;
+  border-radius: 4px;
+  background-color: #333333;
+  color: white;
+  font-size: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  bottom: 30px;
+  right: 30px;
+  opacity: 0;
+  transition: 500ms;
+}
+
+.show {
+  opacity: 1;
+  transition: 500ms;
+}
