@@ -1,0 +1,19 @@
+{
+    "navigation":{
+        "services": "Services",
+        "descount": "Descount",
+        "blog": "Blog",
+        "team": "Team",
+        "contacts": "Contacts",
+        "submenu": {
+           "haidress": "Haidress",
+           "manicure": "Manicure",
+           "cosmetic": "Cosmetic",
+           "eyebrows": "Eyebrows | Makeup"
+        }
+    },
+    "label": "Select another language!",
+    "about": "About me",
+    "home": "Home",
+    "user": "My name is: {{name}}"
+}

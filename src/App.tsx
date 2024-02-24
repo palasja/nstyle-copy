@@ -16,11 +16,12 @@ import Cosmetic from './pages/cosmetic';
 import Home from './pages/home';
 import Manicure from './pages/manicure';
 import UppButton from './components/uppButton';
+import { Suspense } from 'react';
 
 function App() {
   return (
-    <>
-      <div className="content">
+    <Suspense fallback='loading'>
+ <div className="content">
         <Header />
         <Navigation />
         <Routes>
@@ -40,7 +41,8 @@ function App() {
       </div>
       <Footer />
       <UppButton />
-    </>
+    </Suspense>
+
   );
 }
 export default App;

@@ -185,3 +185,9 @@ export const tablesNameIdMap = new Map<string, string>([
 ]);
 
 export const tableIdNameMap = new Map<string, string>();
+
+export const LANGUAGES = [
+  { label: 'Russian', code: 'ru' },
+  { label: 'English', code: 'en' },
+  { label: 'Belarus', code: 'be' },
+]

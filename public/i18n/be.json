@@ -1,0 +1,20 @@
+{
+    "navigation":{
+        "services": "Паслугі",
+        "descount": "Зніжкі",
+        "blog": "Блог",
+        "team": "Каманда",
+        "contacts": "Кантакты",
+        "submenu": {
+           "haidress": "Цырульня",
+           "manicure": "Манікюр",
+           "cosmetic": "Касметычныя",
+           "eyebrows": "Юровы | Вейкі | Макіяж"
+        }
+    },
+    "title": "Applicazione multilingue",
+    "label": "Selezionare un'altra lingua",
+    "about": "Su di me",
+    "home": "Casa",
+    "user": "Mi chiamo: {{name}}"
+}

@@ -1,0 +1,19 @@
+{
+    "navigation":{
+        "services": "Услуги",
+        "descount": "Акции",
+        "blog": "Блог",
+        "team": "Команда",
+        "contacts": "Контакты",
+        "submenu": {
+           "haidress": "Парикхмахерские",
+           "manicure": "Ногтевой сервис",
+           "cosmetic": "Косметические",
+           "eyebrows": "Брови | Русницы | Макияж"
+        }
+    },
+    "label": "Selecciona otro lenguaje!",
+    "about": "Sobre mí",
+    "home": "Inicio",
+    "user": "Mi nombre es: {{name}}"
+}
