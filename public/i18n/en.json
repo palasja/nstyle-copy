@@ -12,6 +12,21 @@
            "eyebrows": "Eyebrows | Makeup"
         }
     },
+    "services":{
+        "name": "Beauty studio services",
+        "expiriance": "12+ years of experience",
+        "count":"More than 1000 complex colorings per year",
+        "manicure": "Manicure",
+        "cosmetic": "Cosmetic",
+        "depilation": "Depilation",
+        "haidress": "Men's/women's haircuts ",
+        "hairStyles": "Hair Styles",
+        "coloring": "Coloring",
+        "haircare": "Hair Care",
+        "eyebrowsEyelashes": "Eyebrows",
+        "makeup": "Makeup"
+    },
+    "errorMesage": "Something wrong, please come later",
     "label": "Select another language!",
     "about": "About me",
     "home": "Home",

@@ -9,9 +9,24 @@
            "haidress": "Цырульня",
            "manicure": "Манікюр",
            "cosmetic": "Касметычныя",
-           "eyebrows": "Юровы | Вейкі | Макіяж"
+           "eyebrows": "Бровы | Вейкі | Макіяж"
         }
     },
+    "services":{
+        "name": "Паслугі студыі прыгажосці",
+        "expiriance": "12+ гадоў вопыту",
+        "count":"Больш за 1000 складаных афарбоўванняў у год",
+        "manicure": "Манікюр",
+        "cosmetic": "Касметалогія",
+        "depilation": "Депіляцыя",
+        "haidress": "Стрыжкі мужскія/жаночыя",
+        "hairStyles": "Укладкі",
+        "coloring": "Афарбоўванне",
+        "haircare": "Догляд валасоў",
+        "eyebrowsEyelashes": "Бровы і вейкі",
+        "makeup": "Макіяж"
+    },
+    "errorMesage": "Божухна, нешта зламаў",
     "title": "Applicazione multilingue",
     "label": "Selezionare un'altra lingua",
     "about": "Su di me",

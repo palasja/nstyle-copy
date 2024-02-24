@@ -7,7 +7,7 @@ import LangSwitcher from '../langSwitcher';
 
 const Navigation = () => {
   const [isShowMoreServices, setisShowMoreServices] = useState(false);
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <div className="screen-wide_stiky">

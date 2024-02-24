@@ -12,6 +12,21 @@
            "eyebrows": "Брови | Русницы | Макияж"
         }
     },
+    "services":{
+        "name": "Услуги студии красоты",
+        "expiriance": "12+ лет опыта",
+        "count":"Более 1000 сложных окрашиваний в год",
+        "manicure": "Ногтевой сервис",
+        "cosmetic": "Косметология",
+        "depilation": "Депиляция",
+        "haidress": "Стрижки мужские/женские",
+        "hairStyles": "Укладки",
+        "coloring": "Окрашивание",
+        "haircare": "Уход",
+        "eyebrowsEyelashes": "Брови и ресницы",
+        "makeup": "Макияж"
+    },
+    "errorMesage": "Что то не так, зайдите позже",
     "label": "Selecciona otro lenguaje!",
     "about": "Sobre mí",
     "home": "Inicio",
