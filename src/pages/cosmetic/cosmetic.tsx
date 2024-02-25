@@ -2,17 +2,19 @@ import { tablesNameIdMap } from '../../assets/items';
 import CostInfo from '../../components/costInfo';
 import TopPanel from '../../components/topPanel';
 import './cosmetic.css';
+import { useTranslation } from 'react-i18next';
 
 const Cosmetic = () => {
+  const { t } = useTranslation();
   return (
     <>
       <TopPanel />
       <CostInfo
-        id={tablesNameIdMap.get('cosmeticEstetic') as string}
+        name={t('db.cosmeticEsteticName')}
         showCostHeaedr={true}
         isOneLine={true}
       />
-      <CostInfo id={tablesNameIdMap.get('depilation') as string} />
+      <CostInfo name={tablesNameIdMap.get('depilation') as string} />
     </>
   );
 };

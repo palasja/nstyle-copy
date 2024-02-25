@@ -1,7 +1,6 @@
 import './serviceNavigation.css';
 import ServiceImageLink from '../serviceImageLink';
 import { useTranslation } from 'react-i18next';
-import { t } from 'i18next';
 
 const ServiceNavigation = () => {
   const { t } = useTranslation();

@@ -1,4 +1,32 @@
-// @ts-nocheck
+import { Client, fql, FaunaError } from "fauna";
+
+const getClient = (): Client => {
+  return new Client({
+    secret: import.meta.env.VITE_APP_FAUNA_KEY,
+  })
+}
+export const getServiceByName = async (name:string) => {
+  const client = getClient();
+  try {
+    const collectionQuery = fql`ServicesCost.all().firstWhere(.name == ${name === 'null' ? null : name})`;
+
+    const response = await client.query(collectionQuery);
+    console.log(response.data);
+    return response.data;
+  } catch (error) {
+    if (error instanceof FaunaError) {
+      console.log(error);
+    }
+  } finally {
+    client.close();
+  }
+}
+// configure your client
+
+
+
+/**
+ // @ts-nocheck
 import faunadb, {
   Create,
   Collection,
@@ -70,3 +98,5 @@ export const updateTransaction = (id, data) =>
   );
 
 export const deleteTransaction = (id) => client.query(Delete(Ref(Collection('ServicesCost'), id)));
+
+ */

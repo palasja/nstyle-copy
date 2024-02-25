@@ -2,14 +2,16 @@ import './eyebrows.css';
 import TopPanel from '../../components/topPanel';
 import { tablesNameIdMap } from '../../assets/items';
 import CostInfo from '../../components/costInfo';
+import { useTranslation } from 'react-i18next';
 
 const Eyebrows = () => {
+  const { t } = useTranslation();
   return (
     <>
       <TopPanel />
       <main>
         <CostInfo
-          id={tablesNameIdMap.get('eyebrows') as string}
+          name={t('db.eyebrowsName')}
           showCostHeaedr={true}
           isOneLine={true}
         />

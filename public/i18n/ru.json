@@ -26,6 +26,17 @@
         "eyebrowsEyelashes": "Брови и ресницы",
         "makeup": "Макияж"
     },
+    "db":{
+        "homeName": "null",
+        "eyebrowsName": "БРОВИ И РЕСНИЦЫ",
+        "manicureName": "НОГТЕВОЙ СЕРВИС",
+        "cosmeticEsteticName": "КОСМЕТИЧЕСКИЕ УСЛУГИ",
+        "depilationName": "ДЕПИЛЯЦИЯ",
+        "hairdressName": "СТРИЖКА",
+        "hairstylingName": "УКЛАДКА",
+        "haircoloringName": "ОКРАШИВАНИЕ",
+        "hairserviceName": "ПРОЦЕДУРЫ УХОДА ЗА ВОЛОСАМИ"
+    },
     "errorMesage": "Что то не так, зайдите позже",
     "label": "Selecciona otro lenguaje!",
     "about": "Sobre mí",

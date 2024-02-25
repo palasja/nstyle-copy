@@ -1,14 +1,16 @@
+import { useTranslation } from 'react-i18next';
 import { tablesNameIdMap } from '../../assets/items';
 import CostInfo from '../../components/costInfo';
 import TopPanel from '../../components/topPanel';
 import './manicure.css';
 
 const Manicure = () => {
+  const { t } = useTranslation();
   return (
     <>
       <TopPanel />
       <CostInfo
-        id={tablesNameIdMap.get('manicure') as string}
+        name={t('db.manicureName')}
         showCostHeaedr={true}
         isOneLine={true}
       />

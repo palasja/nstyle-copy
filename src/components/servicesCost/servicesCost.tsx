@@ -2,8 +2,10 @@ import { NavLink } from 'react-router-dom';
 import './servicesCost.css';
 import { tablesNameIdMap } from '../../assets/items';
 import CostInfo from '../costInfo';
+import { useTranslation } from 'react-i18next';
 
 const ServicesCost = () => {
+  const { t } = useTranslation();
   return (
     <section className="container">
       <div>
@@ -19,7 +21,7 @@ const ServicesCost = () => {
         </div>
       </div>
       <div className="home-cost">
-        <CostInfo id={tablesNameIdMap.get('homePage') as string} />
+        <CostInfo name={t('db.homeName')} />
       </div>
     </section>
   );
