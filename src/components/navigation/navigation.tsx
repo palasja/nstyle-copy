@@ -1,9 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import './navigation.css';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import LangSwitcher from '../langSwitcher';
 
 const Navigation = () => {
   const [isShowMoreServices, setisShowMoreServices] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <div className="screen-wide_stiky">
@@ -19,7 +22,7 @@ const Navigation = () => {
               onMouseEnter={() => setisShowMoreServices(true)}
               onMouseLeave={() => setisShowMoreServices(false)}
             >
-              Услуги
+              {t('navigation.services')}
             </NavLink>
 
             <NavLink
@@ -28,7 +31,7 @@ const Navigation = () => {
                 (isActive ? 'navigation-panel_active' : 'inactive') + ' navigation-panel_main-link'
               }
             >
-              Акции
+              {t('navigation.descount')}
             </NavLink>
           </nav>
           <NavLink to="/" className="logo" data-testid="logo-link">
@@ -44,7 +47,7 @@ const Navigation = () => {
                 (isActive ? 'navigation-panel_active' : 'inactive') + ' navigation-panel_main-link'
               }
             >
-              Блог
+              {t('navigation.blog')}
             </NavLink>
             <NavLink
               to="/Team"
@@ -52,7 +55,7 @@ const Navigation = () => {
                 (isActive ? 'navigation-panel_active' : 'inactive') + ' navigation-panel_main-link'
               }
             >
-              Команда
+              {t('navigation.team')}
             </NavLink>
             <NavLink
               to="/Contacts"
@@ -60,9 +63,11 @@ const Navigation = () => {
                 (isActive ? 'navigation-panel_active' : 'inactive') + ' navigation-panel_main-link'
               }
             >
-              Контакты
+              {t('navigation.contacts')}
             </NavLink>
+            <LangSwitcher />
           </nav>
+
           <nav
             className={
               'navigation-panel_more-services ' +
@@ -79,7 +84,7 @@ const Navigation = () => {
                 ' navigation-panel_additional-link'
               }
             >
-              Парикхмахерские
+              {t('navigation.submenu.haidress')}
             </NavLink>
             <NavLink
               to="/Services/Manicure"
@@ -88,7 +93,7 @@ const Navigation = () => {
                 ' navigation-panel_additional-link'
               }
             >
-              Ногтевой сервис
+              {t('navigation.submenu.manicure')}
             </NavLink>
             <NavLink
               to="/Services/Cosmetic"
@@ -97,7 +102,7 @@ const Navigation = () => {
                 ' navigation-panel_additional-link'
               }
             >
-              Косметические
+              {t('navigation.submenu.cosmetic')}
             </NavLink>
             <NavLink
               to="/Services/Eyebrows"
@@ -106,7 +111,7 @@ const Navigation = () => {
                 ' navigation-panel_additional-link'
               }
             >
-              Брови | Русницы | Макияж
+              {t('navigation.submenu.eyebrows')}
             </NavLink>
           </nav>
         </div>

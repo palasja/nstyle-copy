@@ -1,25 +1,24 @@
 import { NavLink } from 'react-router-dom';
 import './servicesCost.css';
-import { tablesNameIdMap } from '../../assets/items';
 import CostInfo from '../costInfo';
+import { useTranslation } from 'react-i18next';
 
 const ServicesCost = () => {
+  const { t } = useTranslation();
   return (
     <section className="container">
       <div>
         <div className="description">
-          <h4 className="description-name">Услуги студии красоты</h4>
-          <h3 className="description-shortprice">Краткий прайс</h3>
-          <p className="description-promo">
-            Мы понимаем ценность денег, поэтому предлагаем вам лучшие пакеты по доступной цене.
-          </p>
+          <h4 className="description-name">{t('servicesCost.services')}</h4>
+          <h3 className="description-shortprice">{t('servicesCost.shortPrice')}</h3>
+          <p className="description-promo">{t('servicesCost.description')}</p>
           <NavLink to="/Services" className={'all-services'}>
-            Все Услуги
+            {t('servicesCost.allServices')}
           </NavLink>
         </div>
       </div>
       <div className="home-cost">
-        <CostInfo id={tablesNameIdMap.get('homePage') as string} />
+        <CostInfo name={t('db.homeName')} />
       </div>
     </section>
   );

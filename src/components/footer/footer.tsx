@@ -1,8 +1,10 @@
 import { NavLink } from 'react-router-dom';
 import './footer.css';
 import SocialMediaLink from '../socialMediaLink';
-
+import { useTranslation } from 'react-i18next';
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
       <div className="footer_left">
@@ -14,16 +16,16 @@ const Footer = () => {
         <nav className="footer_nav">
           <ul className="footer_nav-list">
             <li className="footer_nav-list-item">
-              <NavLink to="/">Главная</NavLink>
+              <NavLink to="/">{t('footer.main')}</NavLink>
             </li>
             <li className="footer_nav-list-item">
-              <NavLink to="err">Товары</NavLink>
+              <NavLink to="err">{t('footer.goods')}</NavLink>
             </li>
             <li className="footer_nav-list-item">
-              <NavLink to="/Services">Услуги</NavLink>
+              <NavLink to="/Services">{t('footer.services')}</NavLink>
             </li>
             <li className="footer_nav-list-item">
-              <a href="https://www.instagram.com/nstyle.by/">Фотогалерея</a>
+              <a href="https://www.instagram.com/nstyle.by/">{t('footer.photogalary')}</a>
             </li>
           </ul>
         </nav>
@@ -38,13 +40,13 @@ const Footer = () => {
         </NavLink>
         <SocialMediaLink />
         <p className="footer_org-info">
-          ООО «Очаровательная леди»
+          {t('footer.orginfo')}
           <br />
-          УНП: 191123240
+          {t('footer.unp')}
           <br />
-          Адрес: г.Минск, ул. Ложинская , 22
+          {t('footer.address')}
           <br />
-          Ст. метро Уручье
+          {t('footer.metro')}
         </p>
       </div>
       <div className="footer_right">
@@ -55,24 +57,24 @@ const Footer = () => {
         <nav className="footer_nav">
           <ul className="footer_nav-list">
             <li className="footer_nav-list-item">
-              <NavLink to="/Blog">Блог</NavLink>
+              <NavLink to="/Blog">{t('footer.blog')}</NavLink>
             </li>
             <li className="footer_nav-list-item">
-              <NavLink to="/Team">Команда</NavLink>
+              <NavLink to="/Team">{t('footer.team')}</NavLink>
             </li>
             <li className="footer_nav-list-item">
-              <NavLink to="/Vacancies">Вакансии</NavLink>
+              <NavLink to="/Vacancies">{t('footer.vacation')}</NavLink>
             </li>
             <li className="footer_nav-list-item">
-              <NavLink to="/Contacts">Контакты</NavLink>
+              <NavLink to="/Contacts">{t('footer.contacts')}</NavLink>
             </li>
           </ul>
         </nav>
       </div>
       <div className="footer_devolop-blok">
-        <span>© 2024 Новый Стиль. Все права защищены.</span>{' '}
-        <span className="footer_privacy">Политика конфиденциальности</span>{' '}
-        <span>Дизайн и разработка Проект А-2</span>
+        <span>{t('footer.licens')}</span>{' '}
+        <span className="footer_privacy">{t('footer.politics')}</span>{' '}
+        <span>{t('footer.develoder')}</span>
       </div>
     </footer>
   );

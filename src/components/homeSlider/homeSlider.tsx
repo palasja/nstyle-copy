@@ -2,9 +2,11 @@ import { useEffect } from 'react';
 import SliderImage from '../../components/sliderImage';
 import './homeSlider.css';
 import { SliderImageProps } from '../../type/costType';
-import { homeSlidesInfo } from '../../assets/items';
+import { useTranslation } from 'react-i18next';
+// import { homeSlidesInfo } from '../../assets/items';
 
 const HomeSlider = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     let i = 1;
     showSlide(i);
@@ -30,15 +32,15 @@ const HomeSlider = () => {
     el.classList.add('slider-panel__active');
     el.getElementsByClassName('slider_text')[0].classList.add('slider_text__active');
   };
-  // const [sliderImageInfo, setSliderImageInfo] = useState<SliderImageProps>(map.get('haidress') as SliderImageProps);
+
   return (
     <div>
       <div className="slider">
         <SliderImage {...{ link: '', serviceName: '', img: '' }} />
-        <SliderImage {...(homeSlidesInfo.get('haidress') as SliderImageProps)} />
-        <SliderImage {...(homeSlidesInfo.get('eyebrows') as SliderImageProps)} />
-        <SliderImage {...(homeSlidesInfo.get('cosmetic') as SliderImageProps)} />
-        <SliderImage {...(homeSlidesInfo.get('manicure') as SliderImageProps)} />
+        <SliderImage {...(t('homeSlidesInfo.haidress') as unknown as SliderImageProps)} />
+        <SliderImage {...(t('homeSlidesInfo.eyebrows') as unknown as SliderImageProps)} />
+        <SliderImage {...(t('homeSlidesInfo.cosmetic') as unknown as SliderImageProps)} />
+        <SliderImage {...(t('homeSlidesInfo.manicure') as unknown as SliderImageProps)} />
       </div>
       <div className="buttons-panel">
         <div onClick={() => showSlide(1)} className="change-image_container"></div>
