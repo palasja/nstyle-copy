@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 const SliderImage = (props: SliderImageProps) => {
   const { link, serviceName, img } = props;
   const { t } = useTranslation();
-  console.log(img);
+
   return (
     <section
       className="slider-panel"

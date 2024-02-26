@@ -6,13 +6,13 @@ const getCurrentHost =
   import.meta.env.MODE === 'development'
     ? 'http://localhost:3000/'
     : 'https://nstyle-copy.netlify.app/';
-console.log(getCurrentHost);
+
 i18n
   .use(i18nBackend)
   .use(initReactI18next)
   .init({
     fallbackLng: 'ru',
-    debug: true,
+    debug: false,
     lng: 'ru',
     returnObjects: true,
     interpolation: {
