@@ -10,6 +10,7 @@ import i18next from 'i18next';
 const TopPanel = () => {
   const [currentRoute, setCurrentRoute] = useState('');
   const { t } = useTranslation();
+  //key for reload after change language
   const [key, setKey] = useState(0);
   const pathDictionary = t('pathDictionary') as unknown as { [key: string]: string };
   const getTopPanelText = (): string => {

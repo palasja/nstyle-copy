@@ -8,6 +8,8 @@ import { useTranslation } from 'react-i18next';
 const CostInfo = (props: { name: string; showCostHeaedr?: boolean; isOneLine?: boolean }) => {
   const [costInfo, setCostInfo] = useState<ServiceCostInfo>();
   const { name, showCostHeaedr: showCostHeaedr, isOneLine } = props;
+
+  //key for reload after change language
   const [key, setKey] = useState(0);
   const { t } = useTranslation();
 
@@ -17,7 +19,7 @@ const CostInfo = (props: { name: string; showCostHeaedr?: boolean; isOneLine?: b
   useEffect(() => {
     getAllServices();
     i18next.on('languageChanged', subscriberChangeLang);
-    return i18next.off('name', subscriberChangeLang);
+    // return i18next.off('name', subscriberChangeLang);
   }, [key]);
 
   const getAllServices = async () => {
