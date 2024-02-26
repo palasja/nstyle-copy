@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import LangSwitcher from '../langSwitcher';
 
-
 const Navigation = () => {
   const [isShowMoreServices, setisShowMoreServices] = useState(false);
   const { t } = useTranslation();
@@ -68,7 +67,7 @@ const Navigation = () => {
             </NavLink>
             <LangSwitcher />
           </nav>
-          
+
           <nav
             className={
               'navigation-panel_more-services ' +
@@ -115,7 +114,6 @@ const Navigation = () => {
               {t('navigation.submenu.eyebrows')}
             </NavLink>
           </nav>
-          
         </div>
       </div>
     </div>

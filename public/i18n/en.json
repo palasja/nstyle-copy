@@ -1,34 +1,122 @@
 {
-    "navigation":{
-        "services": "Services",
-        "descount": "Descount",
-        "blog": "Blog",
-        "team": "Team",
-        "contacts": "Contacts",
-        "submenu": {
-           "haidress": "Haidress",
-           "manicure": "Manicure",
-           "cosmetic": "Cosmetic",
-           "eyebrows": "Eyebrows | Makeup"
-        }
+  "navigation": {
+    "services": "Services",
+    "descount": "Descount",
+    "blog": "Blog",
+    "team": "Team",
+    "contacts": "Contacts",
+    "submenu": {
+      "haidress": "Haidress",
+      "manicure": "Manicure",
+      "cosmetic": "Cosmetic",
+      "eyebrows": "Eyebrows | Makeup"
+    }
+  },
+  "services": {
+    "name": "Beauty studio services",
+    "expiriance": "12+ years of experience",
+    "count": "More than 1000 complex colorings per year",
+    "manicure": "Manicure",
+    "cosmetic": "Cosmetic",
+    "depilation": "Depilation",
+    "haidress": "Men's/women's haircuts ",
+    "hairStyles": "Hair Styles",
+    "coloring": "Coloring",
+    "haircare": "Hair Care",
+    "eyebrowsEyelashes": "Eyebrows",
+    "makeup": "Makeup"
+  },
+  "db": {
+    "servicesTable": "ServicesCostEn",
+    "homeName": "null",
+    "eyebrowsName": "EYEBROWS AND EYELASHES",
+    "manicureName": "NAIL SERVICE",
+    "cosmeticEsteticName": "SCOSMETIC SERVICE",
+    "depilationName": "DEPILATION",
+    "hairdressName": "HAIRCUT",
+    "hairstylingName": "Hair styling",
+    "haircoloringName": "COLORING",
+    "hairserviceName": "HAIR CARE PROCEDURES"
+  },
+  "feedbackInfo": {
+    "address": " Minsk, st. Lozhinskaya, 22",
+    "place": "SC 'Dmintriew Kirmash' (2 floor)"
+  },
+  "footer": {
+    "main": "Main",
+    "goods": "Goods",
+    "services": "Services",
+    "photogalary": "Photo gallery",
+    "orginfo": "LLC «Ocharovatelnaya Lady»",
+    "unp": "УНП: 191123240",
+    "address": "Address: Minsk, st. Lozhinskaya, 22",
+    "metro": "Art. Uruchye metro station",
+    "blog": "Blog",
+    "team": "Team",
+    "vacation": "Vacation",
+    "contacts": "Csontacts",
+    "licens": "© 2024 New Style. All rights reserved.",
+    "politics": "Privacy Policy",
+    "develoder": "Design and development Project A-2"
+  },
+  "pathDictionary": {
+    "": "Main",
+    "Blog": "Blog",
+    "Contacts": "Contacts",
+    "Discount": "Discount",
+    "Services": "Services",
+    "Team": "Team",
+    "Vacancies": "Вакансии",
+    "Eyebrows": "Eyebrows | Eyelashes | Makeup",
+    "Haidress": "Haidress",
+    "Cosmetic": "Cosmetic",
+    "Manicure": "Manicure"
+  },
+  "costInfo": {
+    "serviceCost": "Cost of services"
+  },
+  "servicesCost": {
+    "services": "Beauty studio services",
+    "shortPrice": "Brief price list",
+    "description": "We understand the value of money, which is why we offer you the best packages at an affordable price.",
+    "allServices": "All services"
+  },
+  "sliderImage": {
+    "serviceAndCost": "Services and prices"
+  },
+  "eyebrows": {
+    "eyelashes": "Eyelash extensions in Minsk",
+    "eyebrows": "Eyebrow Care"
+  },
+  "home": {
+    "style": "FOLLOW YOUR STYLE!",
+    "anonce": "Weekly announcements",
+    "social": "On the website and on social networks"
+  },
+  "homeSlidesInfo": {
+    "haidress": {
+      "link": "/Services/Haidress",
+      "serviceName": "Hairdressing services",
+      "img": "headress.jpg"
     },
-    "services":{
-        "name": "Beauty studio services",
-        "expiriance": "12+ years of experience",
-        "count":"More than 1000 complex colorings per year",
-        "manicure": "Manicure",
-        "cosmetic": "Cosmetic",
-        "depilation": "Depilation",
-        "haidress": "Men's/women's haircuts ",
-        "hairStyles": "Hair Styles",
-        "coloring": "Coloring",
-        "haircare": "Hair Care",
-        "eyebrowsEyelashes": "Eyebrows",
-        "makeup": "Makeup"
+    "eyebrows": {
+      "link": "/Services/Eyebrows",
+      "serviceName": "Eyebrows | Eyelashes | Makeup",
+      "img": "eyebrows.jpg"
     },
-    "errorMesage": "Something wrong, please come later",
-    "label": "Select another language!",
-    "about": "About me",
-    "home": "Home",
-    "user": "My name is: {{name}}"
+    "cosmetic": {
+      "link": "/Services/Cosmetic",
+      "serviceName": "Cosmetology",
+      "img": "cosmetic.jpg"
+    },
+    "manicure": {
+      "link": "/Services/Manicure",
+      "serviceName": "Manicure",
+      "img": "manicure.jpg"
+    }
+  },
+  "errorMesage": "Something wrong, please come later",
+  "label": "Select another language!",
+  "about": "About me",
+  "user": "My name is: {{name}}"
 }

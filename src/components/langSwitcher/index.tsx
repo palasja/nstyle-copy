@@ -1,2 +1,2 @@
-import LangSwitcher from "./langSwitcher";
-export default LangSwitcher
+import LangSwitcher from './langSwitcher';
+export default LangSwitcher;

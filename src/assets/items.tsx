@@ -1,6 +1,6 @@
 // import { ServiceCostInfo, ServiceCostTable } from 'src/type/costType';
 
-import { SliderImageProps } from '../type/costType';
+// import { SliderImageProps } from '../type/costType';
 
 /**
  export const Eyebrows: ServiceCostTable = {
@@ -123,66 +123,54 @@ const EyebrowsEyelashes: ServiceCostInfo = {
 };
  */
 
-export const pathDictionary: { [key: string]: string } = {
-  '': 'Главная',
-  Blog: 'Блог',
-  Contacts: 'Контакты',
-  Discount: 'Акции',
-  Services: 'Услуги',
-  Team: 'Команда',
-  Vacancies: 'Вакансии',
-  Eyebrows: 'Брови | Ресницы | Макияж',
-  Haidress: 'Парикхмахерские',
-  Cosmetic: 'Косметические',
-  Manicure: 'Ногтевой сервис',
-};
+// export const pathDictionary: { [key: string]: string } = {
+//   '': 'Главная',
+//   Blog: 'Блог',
+//   Contacts: 'Контакты',
+//   Discount: 'Акции',
+//   Services: 'Услуги',
+//   Team: 'Команда',
+//   Vacancies: 'Вакансии',
+//   Eyebrows: 'Брови | Ресницы | Макияж',
+//   Haidress: 'Парикхмахерские',
+//   Cosmetic: 'Косметические',
+//   Manicure: 'Ногтевой сервис',
+// };
 
-export const homeSlidesInfo = new Map<string, SliderImageProps>([
-  [
-    'haidress',
-    {
-      link: '/Services/Haidress',
-      serviceName: 'Парикхмахерские услуги',
-      img: new URL(`./images/home/headress.jpg`, import.meta.url).href,
-    },
-  ],
-  [
-    'eyebrows',
-    {
-      link: '/Services/Eyebrows',
-      serviceName: 'Брови | Ресницы | Макияж',
-      img: new URL(`./images/home/eyebrows.jpg`, import.meta.url).href,
-    },
-  ],
-  [
-    'cosmetic',
-    {
-      link: '/Services/Cosmetic',
-      serviceName: 'Косметология',
-      img: new URL(`./images/home/cosmetic.jpg`, import.meta.url).href,
-    },
-  ],
-  [
-    'manicure',
-    {
-      link: '/Services/Manicure',
-      serviceName: 'Ногтевой сервис',
-      img: new URL(`./images/home/manicure.jpg`, import.meta.url).href,
-    },
-  ],
-]);
-
-export const tablesNameIdMap = new Map<string, string>([
-  ['eyebrows', '388618925886144714'],
-  ['manicure', '390002322677170377'],
-  ['cosmeticEstetic', '390011792127951056'],
-  ['depilation', '390012316639297744'],
-  ['hairdress', '390013302370992336'],
-  ['hairstyling', '390014172291662032'],
-  ['haircoloring', '390014187587240139'],
-  ['hairservice', '390014224220291280'],
-  ['homePage', '390062472432713930'],
-]);
+// export const homeSlidesInfo = new Map<string, SliderImageProps>([
+//   [
+//     'haidress',
+//     {
+//       link: '/Services/Haidress',
+//       serviceName: 'Парикхмахерские услуги',
+//       img: new URL(`./images/home/headress.jpg`, import.meta.url).href,
+//     },
+//   ],
+//   [
+//     'eyebrows',
+//     {
+//       link: '/Services/Eyebrows',
+//       serviceName: 'Брови | Ресницы | Макияж',
+//       img: new URL(`./images/home/eyebrows.jpg`, import.meta.url).href,
+//     },
+//   ],
+//   [
+//     'cosmetic',
+//     {
+//       link: '/Services/Cosmetic',
+//       serviceName: 'Косметология',
+//       img: new URL(`./images/home/cosmetic.jpg`, import.meta.url).href,
+//     },
+//   ],
+//   [
+//     'manicure',
+//     {
+//       link: '/Services/Manicure',
+//       serviceName: 'Ногтевой сервис',
+//       img: new URL(`./images/home/manicure.jpg`, import.meta.url).href,
+//     },
+//   ],
+// ]);
 
 export const tableIdNameMap = new Map<string, string>();
 
@@ -190,4 +178,4 @@ export const LANGUAGES = [
   { label: 'Russian', code: 'ru' },
   { label: 'English', code: 'en' },
   { label: 'Belarus', code: 'be' },
-]
+];

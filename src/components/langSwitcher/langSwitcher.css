@@ -1,10 +1,10 @@
-select{
+select {
   border: none;
 }
 
-.lang-switcher{
+.lang-switcher {
   border-color: white;
 }
-select:focus-visible{
+select:focus-visible {
   border-color: red;
 }

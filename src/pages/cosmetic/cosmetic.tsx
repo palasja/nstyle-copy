@@ -1,4 +1,3 @@
-import { tablesNameIdMap } from '../../assets/items';
 import CostInfo from '../../components/costInfo';
 import TopPanel from '../../components/topPanel';
 import './cosmetic.css';
@@ -9,12 +8,8 @@ const Cosmetic = () => {
   return (
     <>
       <TopPanel />
-      <CostInfo
-        name={t('db.cosmeticEsteticName')}
-        showCostHeaedr={true}
-        isOneLine={true}
-      />
-      <CostInfo name={tablesNameIdMap.get('depilation') as string} />
+      <CostInfo name={t('db.cosmeticEsteticName')} showCostHeaedr={true} isOneLine={true} />
+      <CostInfo name={t('db.homeName')} />
     </>
   );
 };

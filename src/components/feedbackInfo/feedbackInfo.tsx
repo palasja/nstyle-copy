@@ -2,8 +2,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faPhoneFlip } from '@fortawesome/free-solid-svg-icons';
 import './feedbackInfo.css';
 import SocialMediaLink from '../socialMediaLink';
-
+import { useTranslation } from 'react-i18next';
 const FeedbackInfo = () => {
+  const { t } = useTranslation();
   return (
     <div className="feedback_info">
       <SocialMediaLink />
@@ -29,10 +30,10 @@ const FeedbackInfo = () => {
             target="_blank"
             className="transition"
           >
-            г. Минск, ул. Ложинская, 22
+            {t('feedbackInfo.address')}
           </a>
         </div>
-        <div className="adress-palce">ТЦ "Дмитриев Кирмаш" (2 этаж)</div>
+        <div className="adress-palce">{t('feedbackInfo.place')}</div>
       </div>
       <div className="phone">
         <div className="phone_icon">

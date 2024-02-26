@@ -30,16 +30,11 @@ type SliderImageProps = {
   serviceName: string;
   img: string;
 };
-type ServiceImageLinkProps = {
-  link: string;
-  serviceName: string;
-  img: string;
-};
+
 export type {
   SliderImageProps,
   ResponseCostTable,
   ServiceCostInfo,
   ServiceCostTable,
   ServiceCostRow,
-  ServiceImageLinkProps,
 };

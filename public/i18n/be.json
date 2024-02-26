@@ -1,35 +1,123 @@
 {
-    "navigation":{
-        "services": "Паслугі",
-        "descount": "Зніжкі",
-        "blog": "Блог",
-        "team": "Каманда",
-        "contacts": "Кантакты",
-        "submenu": {
-           "haidress": "Цырульня",
-           "manicure": "Манікюр",
-           "cosmetic": "Касметычныя",
-           "eyebrows": "Бровы | Вейкі | Макіяж"
-        }
+  "navigation": {
+    "services": "Паслугі",
+    "descount": "Зніжкі",
+    "blog": "Блог",
+    "team": "Каманда",
+    "contacts": "Кантакты",
+    "submenu": {
+      "haidress": "Цырульня",
+      "manicure": "Манікюр",
+      "cosmetic": "Касметычныя",
+      "eyebrows": "Бровы | Вейкі | Макіяж"
+    }
+  },
+  "services": {
+    "name": "Паслугі студыі прыгажосці",
+    "expiriance": "12+ гадоў вопыту",
+    "count": "Больш за 1000 складаных афарбоўванняў у год",
+    "manicure": "Манікюр",
+    "cosmetic": "Касметалогія",
+    "depilation": "Депіляцыя",
+    "haidress": "Стрыжкі мужскія/жаночыя",
+    "hairStyles": "Укладкі",
+    "coloring": "Афарбоўванне",
+    "haircare": "Догляд валасоў",
+    "eyebrowsEyelashes": "Бровы і вейкі",
+    "makeup": "Макіяж"
+  },
+  "db": {
+    "servicesTable": "ServicesCostBe",
+    "homeName": "null",
+    "eyebrowsName": "БРОВИ И РЕСНИЦЫ",
+    "manicureName": "НОГТЕВОЙ СЕРВИС",
+    "cosmeticEsteticName": "КОСМЕТИЧЕСКИЕ УСЛУГИ",
+    "depilationName": "ДЕПИЛЯЦИЯ",
+    "hairdressName": "СТРИЖКА",
+    "hairstylingName": "УКЛАДКА",
+    "haircoloringName": "ОКРАШИВАНИЕ",
+    "hairserviceName": "ПРОЦЕДУРЫ УХОДА ЗА ВОЛОСАМИ"
+  },
+  "feedbackInfo": {
+    "address": " г. Мінск, вул. Лажынская, 22",
+    "place": "ГЦ 'Дмітрыев Кірмаш' (2 паверх)"
+  },
+  "footer": {
+    "main": "Галоўная",
+    "goods": "Тавары",
+    "services": "Паслугі",
+    "photogalary": "Фотагалерэя",
+    "orginfo": "ООО «Очаровательная леді»",
+    "unp": "УНП: 191123240",
+    "address": "Адрас: г. Мінск, вул. Ложынская, 22",
+    "metro": "Ст. метро Уручча",
+    "blog": "Блог",
+    "team": "Каманда",
+    "vacation": "Вакансіі",
+    "contacts": "Кантакты",
+    "licens": "© 2024 Новы Стыль. Ўсе правы абаронены.",
+    "politics": "Палітыка прыватнасці",
+    "develoder": "Дызайн і распрацоўка Праект А-2"
+  },
+  "pathDictionary": {
+    "": "Главная",
+    "Blog": "Блог",
+    "Contacts": "Контакты",
+    "Discount": "Акции",
+    "Services": "Услуги",
+    "Team": "Команда",
+    "Vacancies": "Вакансии",
+    "Eyebrows": "Брови | Ресницы | Макияж",
+    "Haidress": "Парикхмахерские",
+    "Cosmetic": "Косметические",
+    "Manicure": "Ногтевой сервис"
+  },
+  "costInfo": {
+    "serviceCost": "Кошт паслуг"
+  },
+  "servicesCost": {
+    "services": "Паслугі студыі прыгажосці",
+    "shortPrice": "Кароткі прайс",
+    "description": "Мы разумеем каштоўнасць грошай, таму прапануем вам лепшыя пакеты па даступным кошце.",
+    "allServices": "Усе паслугі"
+  },
+  "sliderImage": {
+    "serviceAndCost": "Паслугі і Цэны"
+  },
+  "eyebrows": {
+    "eyelashes": "Нарошчванне павек у Мінску",
+    "eyebrows": "Сыход за Бровямі"
+  },
+  "home": {
+    "style": "Сачы за стылем!",
+    "anonce": "Штотыднёвыя навіны",
+    "social": "На сайце і ў сацыяльных сетках"
+  },
+  "homeSlidesInfo": {
+    "haidress": {
+      "link": "/Services/Haidress",
+      "serviceName": "Цырульныя паслугі",
+      "img": "headress.jpg"
     },
-    "services":{
-        "name": "Паслугі студыі прыгажосці",
-        "expiriance": "12+ гадоў вопыту",
-        "count":"Больш за 1000 складаных афарбоўванняў у год",
-        "manicure": "Манікюр",
-        "cosmetic": "Касметалогія",
-        "depilation": "Депіляцыя",
-        "haidress": "Стрыжкі мужскія/жаночыя",
-        "hairStyles": "Укладкі",
-        "coloring": "Афарбоўванне",
-        "haircare": "Догляд валасоў",
-        "eyebrowsEyelashes": "Бровы і вейкі",
-        "makeup": "Макіяж"
+    "eyebrows": {
+      "link": "/Services/Eyebrows",
+      "serviceName": "Бровы | Вейкі | Макіяж",
+      "img": "eyebrows.jpg"
     },
-    "errorMesage": "Божухна, нешта зламаў",
-    "title": "Applicazione multilingue",
-    "label": "Selezionare un'altra lingua",
-    "about": "Su di me",
-    "home": "Casa",
-    "user": "Mi chiamo: {{name}}"
+    "cosmetic": {
+      "link": "/Services/Cosmetic",
+      "serviceName": "Касметалогія",
+      "img": "cosmetic.jpg"
+    },
+    "manicure": {
+      "link": "/Services/Manicure",
+      "serviceName": "Ногцевы сэрвіс",
+      "img": "manicure.jpg"
+    }
+  },
+  "errorMesage": "Божухна, нешта зламаў",
+  "title": "Applicazione multilingue",
+  "label": "Selezionare un'altra lingua",
+  "about": "Su di me",
+  "user": "Mi chiamo: {{name}}"
 }

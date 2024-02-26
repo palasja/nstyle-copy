@@ -1,45 +1,122 @@
 {
-    "navigation":{
-        "services": "Услуги",
-        "descount": "Акции",
-        "blog": "Блог",
-        "team": "Команда",
-        "contacts": "Контакты",
-        "submenu": {
-           "haidress": "Парикхмахерские",
-           "manicure": "Ногтевой сервис",
-           "cosmetic": "Косметические",
-           "eyebrows": "Брови | Русницы | Макияж"
-        }
+  "navigation": {
+    "services": "Услуги",
+    "descount": "Акции",
+    "blog": "Блог",
+    "team": "Команда",
+    "contacts": "Контакты",
+    "submenu": {
+      "haidress": "Парикхмахерские",
+      "manicure": "Ногтевой сервис",
+      "cosmetic": "Косметические",
+      "eyebrows": "Брови | Русницы | Макияж"
+    }
+  },
+  "services": {
+    "name": "Услуги студии красоты",
+    "expiriance": "12+ лет опыта",
+    "count": "Более 1000 сложных окрашиваний в год",
+    "manicure": "Ногтевой сервис",
+    "cosmetic": "Косметология",
+    "depilation": "Депиляция",
+    "haidress": "Стрижки мужские/женские",
+    "hairStyles": "Укладки",
+    "coloring": "Окрашивание",
+    "haircare": "Уход",
+    "eyebrowsEyelashes": "Брови и ресницы",
+    "makeup": "Макияж"
+  },
+  "db": {
+    "servicesTable": "ServicesCost",
+    "homeName": "null",
+    "eyebrowsName": "БРОВИ И РЕСНИЦЫ",
+    "manicureName": "НОГТЕВОЙ СЕРВИС",
+    "cosmeticEsteticName": "КОСМЕТИЧЕСКИЕ УСЛУГИ",
+    "depilationName": "ДЕПИЛЯЦИЯ",
+    "hairdressName": "СТРИЖКА",
+    "hairstylingName": "УКЛАДКА",
+    "haircoloringName": "ОКРАШИВАНИЕ",
+    "hairserviceName": "ПРОЦЕДУРЫ УХОДА ЗА ВОЛОСАМИ"
+  },
+  "feedbackInfo": {
+    "address": "г. Минск, ул. Ложинская, 22",
+    "place": "ТЦ 'Дмитриев Кирмаш' (2 этаж)"
+  },
+  "footer": {
+    "main": "Главная",
+    "goods": "Товары",
+    "services": "Услуги",
+    "photogalary": "Фотогалерея",
+    "orginfo": "ООО «Очаровательная леди»",
+    "unp": "УНП: 191123240",
+    "address": "Адрес: г.Минск, ул. Ложинская , 22",
+    "metro": "Ст. метро Уручье",
+    "blog": "Блог",
+    "team": "Команда",
+    "vacation": "Вакансии",
+    "contacts": "Контакты",
+    "licens": "© 2024 Новый Стиль. Все права защищены.",
+    "politics": "Политика конфиденциальности",
+    "develoder": "Дизайн и разработка Проект А-2"
+  },
+  "pathDictionary": {
+    "": "Главная",
+    "Blog": "Блог",
+    "Contacts": "Контакты",
+    "Discount": "Акции",
+    "Services": "Услуги",
+    "Team": "Команда",
+    "Vacancies": "Вакансии",
+    "Eyebrows": "Брови | Ресницы | Макияж",
+    "Haidress": "Парикхмахерские",
+    "Cosmetic": "Косметические",
+    "Manicure": "Ногтевой сервис"
+  },
+  "costInfo": {
+    "serviceCost": "Стоимость услуг"
+  },
+  "servicesCost": {
+    "services": "Услуги студии красоты",
+    "shortPrice": "Краткий прайс",
+    "description": "Мы понимаем ценность денег, поэтому предлагаем вам лучшие пакеты по доступной цене.",
+    "allServices": "Все Услуги"
+  },
+  "sliderImage": {
+    "serviceAndCost": "Услуги и Цены"
+  },
+  "eyebrows": {
+    "eyelashes": "Наращивание ресниц в Минске",
+    "eyebrows": "Уход за Бровями"
+  },
+  "home": {
+    "style": "СЛЕДИ ЗА СТИЛЕМ!",
+    "anonce": "Еженедельные анонсы",
+    "social": "На сайте и в социальных сетях"
+  },
+  "homeSlidesInfo": {
+    "haidress": {
+      "link": "/Services/Haidress",
+      "serviceName": "Парикхмахерские услуги",
+      "img": "headress.jpg"
     },
-    "services":{
-        "name": "Услуги студии красоты",
-        "expiriance": "12+ лет опыта",
-        "count":"Более 1000 сложных окрашиваний в год",
-        "manicure": "Ногтевой сервис",
-        "cosmetic": "Косметология",
-        "depilation": "Депиляция",
-        "haidress": "Стрижки мужские/женские",
-        "hairStyles": "Укладки",
-        "coloring": "Окрашивание",
-        "haircare": "Уход",
-        "eyebrowsEyelashes": "Брови и ресницы",
-        "makeup": "Макияж"
+    "eyebrows": {
+      "link": "/Services/Eyebrows",
+      "serviceName": "Брови | Ресницы | Макияж",
+      "img": "eyebrows.jpg"
     },
-    "db":{
-        "homeName": "null",
-        "eyebrowsName": "БРОВИ И РЕСНИЦЫ",
-        "manicureName": "НОГТЕВОЙ СЕРВИС",
-        "cosmeticEsteticName": "КОСМЕТИЧЕСКИЕ УСЛУГИ",
-        "depilationName": "ДЕПИЛЯЦИЯ",
-        "hairdressName": "СТРИЖКА",
-        "hairstylingName": "УКЛАДКА",
-        "haircoloringName": "ОКРАШИВАНИЕ",
-        "hairserviceName": "ПРОЦЕДУРЫ УХОДА ЗА ВОЛОСАМИ"
+    "cosmetic": {
+      "link": "/Services/Cosmetic",
+      "serviceName": "Косметология",
+      "img": "cosmetic.jpg"
     },
-    "errorMesage": "Что то не так, зайдите позже",
-    "label": "Selecciona otro lenguaje!",
-    "about": "Sobre mí",
-    "home": "Inicio",
-    "user": "Mi nombre es: {{name}}"
+    "manicure": {
+      "link": "/Services/Manicure",
+      "serviceName": "Ногтевой сервис",
+      "img": "manicure.jpg"
+    }
+  },
+  "errorMesage": "Что то не так, зайдите позже",
+  "label": "Selecciona otro lenguaje!",
+  "about": "Sobre mí",
+  "user": "Mi nombre es: {{name}}"
 }

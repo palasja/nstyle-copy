@@ -1,9 +1,7 @@
-import { tablesNameIdMap } from '../../assets/items';
 import CostInfo from '../../components/costInfo';
 import TopPanel from '../../components/topPanel';
 import './haidress.css';
 import { useTranslation } from 'react-i18next';
-
 
 const Haidress = () => {
   const { t } = useTranslation();

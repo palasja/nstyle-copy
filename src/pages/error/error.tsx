@@ -5,7 +5,7 @@ const Error = () => {
   const { t } = useTranslation();
   // console.log(t('label'))
   return (
-    <div className='error-message'>
+    <div className="error-message">
       <h2> {t('errorMesage')}</h2>
     </div>
   );

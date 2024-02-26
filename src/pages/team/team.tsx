@@ -5,7 +5,6 @@ const Team = () => {
   return (
     <>
       <TopPanel />
-      <h2>Команда</h2>
     </>
   );
 };

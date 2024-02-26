@@ -20,8 +20,8 @@ import { Suspense } from 'react';
 
 function App() {
   return (
-    <Suspense fallback='loading'>
- <div className="content">
+    <Suspense fallback="loading">
+      <div className="content">
         <Header />
         <Navigation />
         <Routes>
@@ -42,7 +42,6 @@ function App() {
       <Footer />
       <UppButton />
     </Suspense>
-
   );
 }
 export default App;
