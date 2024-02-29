@@ -1,0 +1,31 @@
+.adress {
+  display: grid;
+  grid-template-areas:
+    'mark adress'
+    'mark place';
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 35px 1fr;
+}
+.adress-mark {
+  grid-area: mark;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-size: 36px;
+  margin-right: 15px;
+}
+.adress-adress {
+  grid-area: adress;
+  display: flex;
+  color: #4a4a4a;
+  align-items: center;
+  font-size: 18px;
+  line-height: 26px;
+}
+.adress-adress a {
+  color: inherit;
+}
+.adress-palce {
+  grid-area: place;
+  display: flex;
+}
