@@ -115,6 +115,9 @@
       "img": "manicure.jpg"
     }
   },
+  "contacts":{
+    "contactsTitle":"Contacts"
+  },
   "errorMesage": "Something wrong, please come later",
   "label": "Select another language!",
   "about": "About me",

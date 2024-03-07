@@ -1,0 +1,17 @@
+.phone {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+}
+.phone_icon {
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+.phone_number {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}

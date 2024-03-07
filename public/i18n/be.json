@@ -115,6 +115,9 @@
       "img": "manicure.jpg"
     }
   },
+  "contacts":{
+    "contactsTitle":"Кантактная інфармацыя"
+  },
   "errorMesage": "Божухна, нешта зламаў",
   "title": "Applicazione multilingue",
   "label": "Selezionare un'altra lingua",

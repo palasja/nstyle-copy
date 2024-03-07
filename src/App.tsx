@@ -16,9 +16,15 @@ import Cosmetic from './pages/cosmetic';
 import Home from './pages/home';
 import Manicure from './pages/manicure';
 import UppButton from './components/uppButton';
-import { Suspense } from 'react';
-
+import { Suspense, useEffect } from 'react';
+import ReactGA from 'react-ga4';
+const TRACKING_ID = "G-3D12TP32PB"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 function App() {
+  useEffect(() => {
+    // ReactGA.send({ hitType: "pageview", page: window.location.pathname, title: "Custom Title" });
+    console.log(window.location.pathname);
+  }, []);
   return (
     <Suspense fallback="loading">
       <div className="content">
