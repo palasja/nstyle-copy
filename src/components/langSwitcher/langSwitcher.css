@@ -5,6 +5,3 @@ select {
 .lang-switcher {
   border-color: white;
 }
-select:focus-visible {
-  border-color: red;
-}

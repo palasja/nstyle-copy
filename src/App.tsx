@@ -18,7 +18,7 @@ import Manicure from './pages/manicure';
 import UppButton from './components/uppButton';
 import { Suspense, useEffect } from 'react';
 import ReactGA from 'react-ga4';
-const TRACKING_ID = "G-3D12TP32PB"; // OUR_TRACKING_ID
+const TRACKING_ID = 'G-3D12TP32PB'; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 function App() {
   useEffect(() => {

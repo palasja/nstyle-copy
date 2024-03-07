@@ -1,2 +1,2 @@
-import ContactPhone from "./contactPhone";
+import ContactPhone from './contactPhone';
 export default ContactPhone;
