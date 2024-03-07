@@ -1,2 +1,2 @@
-import ContactPlace from "./contactPlace";
+import ContactPlace from './contactPlace';
 export default ContactPlace;

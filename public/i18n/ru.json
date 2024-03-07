@@ -115,8 +115,8 @@
       "img": "manicure.jpg"
     }
   },
-  "contacts":{
-    "contactsTitle":"Контактная информация"
+  "contacts": {
+    "contactsTitle": "Контактная информация"
   },
   "errorMesage": "Что то не так, зайдите позже",
   "label": "Selecciona otro lenguaje!",

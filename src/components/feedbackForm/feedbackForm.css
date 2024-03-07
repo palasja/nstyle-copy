@@ -1,0 +1,59 @@
+.feedback-form {
+  text-align: left;
+  display: grid;
+}
+.feedback-form label {
+  color: rgb(33, 37, 41);
+}
+
+.feedback-form_fieldset,
+.feedback-form_input,
+.feedback-form_textarea {
+  border: none;
+  color: rgb(181, 181, 181);
+}
+
+.feedback-form_input,
+.feedback-form_textarea {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #eee;
+}
+
+.feedback-form_short-field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.feedback-form_agree {
+}
+.feedback-form_agree-field {
+  width: 35%;
+  display: flex;
+  align-items: start;
+}
+.agree-personal-data {
+  text-decoration: underline;
+  font-weight: 600;
+}
+.feedback-form_submit {
+  width: 260px;
+  height: 60px;
+  border: none;
+  justify-self: end;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1.75px;
+  border-radius: 0;
+
+  background-color: #23cf5f;
+  transition: all 0.3s ease-in-out;
+}
+
+.feedback-form_submit:hover {
+  color: #fff;
+  background-color: #1fae51;
+}

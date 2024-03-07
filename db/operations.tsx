@@ -1,5 +1,6 @@
 import { Client, fql, FaunaError, Query } from 'fauna';
 import i18next from 'i18next';
+import { Item } from '../src/type/feedbackFormType';
 
 const getClient = (): Client => {
   return new Client({
@@ -36,6 +37,21 @@ export const getServiceByName = async (name: string) => {
     client.close();
   }
 };
+
+export const newCilientMessage = async (message: Item) => {
+  const client = getClient();
+  try {
+    const response = await client.query(fql`ClientMessages.create(${message})`);
+    return response.data;
+  } catch (error) {
+    if (error instanceof FaunaError) {
+      console.log(error);
+    }
+  } finally {
+    client.close();
+  }
+};
+
 // configure your client
 
 /**
