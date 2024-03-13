@@ -6,7 +6,7 @@ const getCurrentHost =
   import.meta.env.MODE === 'development'
     ? 'http://localhost:3000/'
     : 'https://nstyle-copy.netlify.app/';
-
+    // :'http://localhost:4173/'
 i18n
   .use(i18nBackend)
   .use(initReactI18next)
