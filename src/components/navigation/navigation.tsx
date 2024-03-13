@@ -24,7 +24,6 @@ const Navigation = () => {
             >
               {t('navigation.services')}
             </NavLink>
-
             <NavLink
               to="/Discount"
               className={({ isActive }) =>
@@ -37,9 +36,6 @@ const Navigation = () => {
           <NavLink to="/" className="logo" data-testid="logo-link">
             <img src={new URL(`../../assets/logo.svg`, import.meta.url).href} alt="NStyle logo" />
           </NavLink>
-          {/* <a href="/" className="logo" data-testid="logo-link">
-            <img src={new URL(`../../assets/logo.svg`, import.meta.url).href} alt="NStyle logo" />
-          </a> */}
           <nav className="navigation-panel_right">
             <NavLink
               to="/Blog"
@@ -65,9 +61,16 @@ const Navigation = () => {
             >
               {t('navigation.contacts')}
             </NavLink>
+            {/* <NavLink
+              to="/Auth"
+              className={({ isActive }) =>
+                (isActive ? 'navigation-panel_active' : 'inactive') + ' navigation-panel_main-link'
+              }
+            >
+              Auth
+            </NavLink> */}
             <LangSwitcher />
           </nav>
-
           <nav
             className={
               'navigation-panel_more-services ' +

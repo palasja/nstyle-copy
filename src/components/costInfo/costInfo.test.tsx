@@ -42,9 +42,7 @@ import CostInfo from '.';
 //   vi.mock('../../../db/operations', () => ({
 //     getServiceByName: vi.fn().mockImplementation(() => fullMockData.data),
 //   }));
-  
 
-  
 //   render(<CostInfo name={'1'} showCostHeaedr={true} />);
 //   screen.debug();
 //   expect(await screen.findByText('Тестовая стрижка'));

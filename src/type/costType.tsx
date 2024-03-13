@@ -13,6 +13,7 @@ type ServiceCostTable = {
 };
 
 type ServiceCostInfo = {
+  id: string;
   name: string;
   tables: ServiceCostTable[];
 };
