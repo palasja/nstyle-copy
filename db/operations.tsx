@@ -1,6 +1,7 @@
 import { Client, fql, FaunaError, Query } from 'fauna';
 import i18next from 'i18next';
 import { Item } from '../src/type/feedbackFormType';
+import { ServiceCostInfo } from '../src/type/costType';
 
 const getClient = (): Client => {
   return new Client({
@@ -38,10 +39,57 @@ export const getServiceByName = async (name: string) => {
   }
 };
 
+export const getAllService = async () => {
+  const client = getClient();
+  let query: Query;
+  switch (i18next.language) {
+    case 'ru': {
+      query = fql`ServicesCost.all()`;
+      break;
+    }
+    case 'en': {
+      query = fql`ServicesCostEn.all()`;
+      break;
+    }
+    case 'be': {
+      query = fql`ServicesCostBe.all()`;
+      break;
+    }
+    default:
+      throw new Error(`No exist query for ${i18next.language} locale`);
+  }
+  try {
+    const response = await client.query(query);
+    return response.data;
+  } catch (error) {
+    if (error instanceof FaunaError) {
+      console.log(error);
+    }
+  } finally {
+    client.close();
+  }
+};
+
 export const newCilientMessage = async (message: Item) => {
   const client = getClient();
   try {
     const response = await client.query(fql`ClientMessages.create(${message})`);
+    return response.data;
+  } catch (error) {
+    if (error instanceof FaunaError) {
+      console.log(error);
+    }
+  } finally {
+    client.close();
+  }
+};
+
+export const changeCostInfo = async (newCostInfo: ServiceCostInfo) => {
+  const client = getClient();
+  try {
+    const response = await client.query(
+      fql`ServicesCost.byId(${newCostInfo.id})!.update({ tables: ${newCostInfo.tables} })`
+    );
     return response.data;
   } catch (error) {
     if (error instanceof FaunaError) {

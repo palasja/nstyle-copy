@@ -1,12 +1,15 @@
 import { NavLink } from 'react-router-dom';
 import './navigation.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import LangSwitcher from '../langSwitcher';
+
+
 
 const Navigation = () => {
   const [isShowMoreServices, setisShowMoreServices] = useState(false);
   const { t } = useTranslation();
+
 
   return (
     <div className="screen-wide_stiky">
@@ -17,14 +20,14 @@ const Navigation = () => {
               to="/Services"
               data-testid="drop-down-link"
               className={({ isActive }) =>
-                (isActive ? 'navigation-panel_active' : 'inactive') + ' navigation-panel_main-link'
+                (isActive ? 'navigation-panel_active' : 'inactive') +
+                ' navigation-panel_main-link'
               }
               onMouseEnter={() => setisShowMoreServices(true)}
               onMouseLeave={() => setisShowMoreServices(false)}
             >
               {t('navigation.services')}
             </NavLink>
-
             <NavLink
               to="/Discount"
               className={({ isActive }) =>
@@ -37,9 +40,6 @@ const Navigation = () => {
           <NavLink to="/" className="logo" data-testid="logo-link">
             <img src={new URL(`../../assets/logo.svg`, import.meta.url).href} alt="NStyle logo" />
           </NavLink>
-          {/* <a href="/" className="logo" data-testid="logo-link">
-            <img src={new URL(`../../assets/logo.svg`, import.meta.url).href} alt="NStyle logo" />
-          </a> */}
           <nav className="navigation-panel_right">
             <NavLink
               to="/Blog"
@@ -67,7 +67,6 @@ const Navigation = () => {
             </NavLink>
             <LangSwitcher />
           </nav>
-
           <nav
             className={
               'navigation-panel_more-services ' +

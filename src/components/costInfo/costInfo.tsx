@@ -17,12 +17,12 @@ const CostInfo = (props: { name: string; showCostHeaedr?: boolean; isOneLine?: b
     setKey(Math.random());
   };
   useEffect(() => {
-    getAllServices();
+    setServicesByName();
     i18next.on('languageChanged', subscriberChangeLang);
     // return i18next.off('name', subscriberChangeLang);
   }, [key]);
 
-  const getAllServices = async () => {
+  const setServicesByName = async () => {
     const response = (await getServiceByName(name)) as ServiceCostInfo;
     setCostInfo(response);
   };

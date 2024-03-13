@@ -16,15 +16,14 @@ import Cosmetic from './pages/cosmetic';
 import Home from './pages/home';
 import Manicure from './pages/manicure';
 import UppButton from './components/uppButton';
-import { Suspense, useEffect } from 'react';
+import { Suspense } from 'react';
 import ReactGA from 'react-ga4';
+import AdminPanel from './pages/adminPanel';
+import Auth from './pages/auth';
+
 const TRACKING_ID = 'G-3D12TP32PB'; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 function App() {
-  useEffect(() => {
-    // ReactGA.send({ hitType: "pageview", page: window.location.pathname, title: "Custom Title" });
-    console.log(window.location.pathname);
-  }, []);
   return (
     <Suspense fallback="loading">
       <div className="content">
@@ -42,6 +41,8 @@ function App() {
           <Route path="/Services/Manicure" element={<Manicure />} />
           <Route path="/Team" element={<Team />} />
           <Route path="/Vacancies" element={<Vacancies />} />
+          <Route path="/AdminPanel" element={<AdminPanel />} />
+          <Route path="/Auth" element={<Auth />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
