@@ -1,9 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { useForm, useFieldArray } from 'react-hook-form';
 import { changeCostInfo, getAllService } from '../../../db/operations';
 import { ServiceCostTable, ServiceCostInfo, ResponseCostTable } from '../../type/costType';
+import { UserContext } from '../../context/UserContext';
+import { Navigate } from 'react-router-dom';
 
 const AdminPanel = () => {
+  const { isAuth } = useContext(UserContext);
   const [alLServices, setAlLServices] = useState<ServiceCostInfo[]>([]);
   const [costInfo, setCostInfo] = useState<ServiceCostInfo>({
     id: '',
@@ -29,7 +32,8 @@ const AdminPanel = () => {
     setCostInfo(newInfo);
     setAlLServices(alLServices.map((s) => (s.name === costInfo.name ? newInfo : s)));
   };
-  return (
+
+  return isAuth ? (
     <>
       <h2>ADMIN</h2>
       <select
@@ -47,6 +51,8 @@ const AdminPanel = () => {
         <ChangeCostTable key={`${i}`} table={t} saveFunction={addNewServiceCostTable} />
       ))}
     </>
+  ) : (
+    <Navigate to="/Auth" replace />
   );
 };
 

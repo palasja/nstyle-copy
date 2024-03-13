@@ -1,15 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import './navigation.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import LangSwitcher from '../langSwitcher';
-
-
 
 const Navigation = () => {
   const [isShowMoreServices, setisShowMoreServices] = useState(false);
   const { t } = useTranslation();
-
 
   return (
     <div className="screen-wide_stiky">
@@ -20,8 +17,7 @@ const Navigation = () => {
               to="/Services"
               data-testid="drop-down-link"
               className={({ isActive }) =>
-                (isActive ? 'navigation-panel_active' : 'inactive') +
-                ' navigation-panel_main-link'
+                (isActive ? 'navigation-panel_active' : 'inactive') + ' navigation-panel_main-link'
               }
               onMouseEnter={() => setisShowMoreServices(true)}
               onMouseLeave={() => setisShowMoreServices(false)}
@@ -65,6 +61,14 @@ const Navigation = () => {
             >
               {t('navigation.contacts')}
             </NavLink>
+            {/* <NavLink
+              to="/Auth"
+              className={({ isActive }) =>
+                (isActive ? 'navigation-panel_active' : 'inactive') + ' navigation-panel_main-link'
+              }
+            >
+              Auth
+            </NavLink> */}
             <LangSwitcher />
           </nav>
           <nav
