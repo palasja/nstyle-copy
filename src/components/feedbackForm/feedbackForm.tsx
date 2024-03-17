@@ -3,34 +3,38 @@ import './feedbackForm.css';
 
 import { useForm } from 'react-hook-form';
 import InputField from './inputField/inputField';
-import { Item, FormValues } from '../../type/feedbackFormType';
+import { Item, FormValues, SubmitFunctionType } from '../../type/feedbackFormType';
 import ErrorMessage from './errorMessage/errorMessge';
 import { newCilientMessage } from '../../../db/operations';
 
-const FeedbackForm = () => {
+const submit: SubmitFunctionType = async (data: FormValues, e: BaseSyntheticEvent | undefined) => {
+  const newItem: Item = {
+    id: 1,
+    name: data.name,
+    email: data.email,
+    phone: data.phone,
+    theme: data.theme,
+    message: data.message,
+    agree: data.agree,
+  };
+  e?.target.reset();
+  newCilientMessage(newItem);
+};
+
+const FeedbackForm = ({ submitAction = submit }) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<FormValues>();
 
-  const submitAction = async (data: FormValues, e: BaseSyntheticEvent | undefined) => {
-    const newItem: Item = {
-      id: 1,
-      name: data.name,
-      email: data.email,
-      phone: data.phone,
-      theme: data.theme,
-      message: data.message,
-      agree: data.agree,
-    };
-    e?.target.reset();
-    newCilientMessage(newItem);
-    console.log(newItem);
-  };
-
   return (
-    <form noValidate className="feedback-form" onSubmit={handleSubmit(submitAction)}>
+    <form
+      noValidate
+      className="feedback-form"
+      onSubmit={handleSubmit(submitAction)}
+      data-testid="form"
+    >
       <InputField
         labelProp="Имя"
         type="text"
@@ -107,9 +111,12 @@ const FeedbackForm = () => {
           {errors.agree && <ErrorMessage errorMessage={errors.agree.message} />}
         </label>
       </fieldset>
-      <button className="feedback-form_submit" value="Отправить сообщение" type="submit">
-        Sent
-      </button>
+      <button
+        className="feedback-form_submit"
+        value="Отправить сообщение"
+        type="submit"
+        data-testid="sendButton"
+      ></button>
     </form>
   );
 };

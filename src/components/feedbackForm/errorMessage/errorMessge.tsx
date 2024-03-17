@@ -7,7 +7,7 @@ type ErrorMessgeProp = {
 
 const ErrorMessage = (props: ErrorMessgeProp) => {
   return (
-    <p className="form-error-message" data-testid="errorMessge">
+    <p className="form-error-message" data-testid="errorMessage">
       {props.errorMessage?.toString()}
     </p>
   );

@@ -1,3 +1,5 @@
+import { BaseSyntheticEvent } from 'react';
+
 type FormValues = {
   name: string;
   email: string;
@@ -16,4 +18,6 @@ type Item = {
   message: string;
   agree: boolean;
 };
-export type { FormValues, Item };
+
+type SubmitFunctionType = (data: FormValues, e: BaseSyntheticEvent | undefined) => Promise<void>;
+export type { FormValues, Item, SubmitFunctionType };
